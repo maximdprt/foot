@@ -1,0 +1,38 @@
+{
+  "_doc": "themeOverride curés pour les équipes dont la couleur principale est blanche ou trop claire (contraste < 4,5:1 sur blanc). primary / secondary acceptent un hex, ou une référence aux couleurs fusionnées : 'primary', 'secondary', 'tertiary', ou 'darken' (= primaire assombrie jusqu'à AA). Toute primaire d'override sous 4,5:1 est assombrie automatiquement (noté dans le rapport). reason est obligatoire.",
+
+  "marseille": { "primary": "secondary", "secondary": "#FFFFFF", "reason": "Maillot blanc : le blanc est déjà la base de l'app ; bleu ciel OM assombri jusqu'à AA, blanc en secondaire." },
+  "lyon": { "primary": "secondary", "secondary": "tertiary", "reason": "Maillot blanc : bleu de l'OL (bande bleue et rouge) en primaire, rouge en secondaire." },
+  "auxerre": { "primary": "secondary", "secondary": "#FFFFFF", "reason": "Maillot blanc : bleu de l'AJA en primaire (assombri si besoin), blanc en secondaire." },
+  "le-havre": { "primary": "secondary", "secondary": "primary", "reason": "« Ciel et marine » : le bleu ciel est trop clair ; bleu marine en primaire, bleu ciel en secondaire." },
+  "lens": { "primary": "secondary", "secondary": "primary", "reason": "« Sang et or » : le jaune est trop clair ; rouge en primaire (assombri si besoin), jaune en secondaire." },
+  "nantes": { "primary": "secondary", "secondary": "primary", "reason": "Jaune trop clair : vert des Canaris en primaire (assombri si besoin), jaune en secondaire." },
+
+  "real-madrid": { "primary": "#00529F", "secondary": "#FEBE10", "reason": "Maillot blanc : bleu Real Madrid (#00529F) en primaire, or en secondaire." },
+  "tottenham-hotspur": { "primary": "#132257", "secondary": "#FFFFFF", "reason": "Maillot blanc : bleu marine des Spurs (#132257) en primaire." },
+  "fulham": { "primary": "#121212", "secondary": "#CC0000", "reason": "Club noir et blanc : noir (identique au texte de l'app) en primaire, rouge du blason en secondaire." },
+  "leeds-united": { "primary": "#1D428A", "secondary": "#FFCD00", "reason": "Maillot blanc : bleu Leeds (#1D428A) en primaire, jaune en secondaire." },
+  "manchester-city": { "primary": "darken", "secondary": "#1C2C5B", "reason": "Bleu ciel assombri jusqu'à AA (teinte conservée), bleu marine City en secondaire." },
+
+  "rayo-vallecano": { "primary": "#E53027", "secondary": "#FFFFFF", "reason": "Maillot blanc à bande rouge : rouge de la bande en primaire (assombri si nécessaire)." },
+  "villarreal": { "primary": "#005187", "secondary": "#FFE667", "reason": "Jaune trop clair : bleu marine du club en primaire, jaune en secondaire." },
+  "celta-vigo": { "primary": "darken", "secondary": "#E5254E", "reason": "Bleu ciel assombri jusqu'à AA, rouge en secondaire." },
+
+  "udinese": { "primary": "#121212", "secondary": "#FFFFFF", "reason": "Club bianconero : noir en primaire, blanc en secondaire." },
+
+  "borussia-dortmund": { "primary": "#121212", "secondary": "#FDE100", "reason": "Jaune trop clair pour du texte : noir (2e couleur du BVB) en primaire, jaune conservé en secondaire (pastille, dégradés)." },
+  "1-fc-koln": { "primary": "#ED1C24", "secondary": "#FFFFFF", "reason": "Maillot blanc : rouge du club en primaire (assombri pour AA)." },
+
+  "nt-brazil": { "primary": "#009C3B", "secondary": "#FFDF00", "reason": "Jaune trop clair : vert du drapeau en primaire (assombri pour AA), jaune en secondaire." },
+  "nt-colombia": { "primary": "#003893", "secondary": "#FCD116", "reason": "Jaune trop clair : bleu du drapeau en primaire, jaune en secondaire." },
+  "nt-ecuador": { "primary": "#034EA2", "secondary": "#FFDD00", "reason": "Jaune trop clair : bleu du drapeau en primaire, jaune en secondaire." },
+  "nt-australia": { "primary": "#00843D", "secondary": "#FFCD00", "reason": "Or trop clair : vert national en primaire, or en secondaire." },
+  "nt-germany": { "primary": "#121212", "secondary": "#DD0000", "reason": "Maillot blanc : noir en primaire, rouge du drapeau en secondaire." },
+  "nt-iran": { "primary": "#239F40", "secondary": "#DA0000", "reason": "Maillot blanc : vert du drapeau en primaire (assombri pour AA), rouge en secondaire." },
+  "nt-argentina": { "primary": "darken", "secondary": "#FFFFFF", "reason": "Bleu ciel albiceleste assombri jusqu'à AA, blanc en secondaire." },
+  "nt-netherlands": { "primary": "darken", "secondary": "#21468B", "reason": "Orange assombri jusqu'à AA (teinte conservée), bleu du drapeau en secondaire." },
+  "nt-uruguay": { "primary": "darken", "secondary": "#FFFFFF", "reason": "Bleu celeste assombri jusqu'à AA, blanc en secondaire." },
+  "nt-croatia": { "primary": "darken", "secondary": "#FFFFFF", "reason": "Rouge du damier assombri jusqu'à AA, blanc en secondaire." },
+  "nt-canada": { "primary": "darken", "secondary": "#FFFFFF", "reason": "Rouge du drapeau assombri jusqu'à AA, blanc en secondaire." },
+  "nt-england": { "primary": "secondary", "secondary": "#FFFFFF", "reason": "Maillot blanc : bleu marine des Three Lions en primaire (assombri si besoin), blanc en secondaire." }
+}

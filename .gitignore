@@ -5,25 +5,45 @@ venv/
 __pycache__/
 *.pyc
 
-# Build
+# Expo / Metro
+.expo/
 dist/
 build/
-.next/
-out/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Natif (généré par prebuild)
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
 
 # Env / secrets
 .env
 .env.local
 .env.*.local
-*.key
 
 # OS / éditeurs
 .DS_Store
 Thumbs.db
 desktop.ini
-.vscode/
 .idea/
 
-# Logs
+# Logs / caches
 *.log
-npm-debug.log*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+coverage/
+scripts/.cache/
+
+# Export web temporaire (npm run screenshots)
+.expo-web-export/

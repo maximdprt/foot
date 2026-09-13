@@ -1,0 +1,3187 @@
+{
+  "version": "2026-27.1",
+  "season": "2026-27",
+  "generatedAt": "2026-09-13T17:38:34.831Z",
+  "fifaRankingDate": "2026-07-20",
+  "teams": [
+    {
+      "id": "none",
+      "name": "Aucune équipe",
+      "nameFr": "Aucune équipe",
+      "nameEn": "No team",
+      "shortName": "—",
+      "city": "",
+      "country": "",
+      "league": "none",
+      "colors": {
+        "primary": "#2E9E5B",
+        "secondary": "#121212",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#27864D",
+        "secondary": "#121212",
+        "reason": "Vert pelouse #2E9E5B assombri en #27864D : la primaire sert aussi au texte et aux icônes sur blanc (3,41:1 → 4,56:1, WCAG AA)."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "shortName": "SCO",
+      "city": "Angers",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#D9C395"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "auxerre",
+      "name": "Auxerre",
+      "shortName": "AJA",
+      "city": "Auxerre",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#4087BF",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#757575",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc : bleu de l'AJA en primaire (assombri si besoin), blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "shortName": "SB29",
+      "city": "Brest",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#ED1C24",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#E7121A",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #ED1C24 for WCAG AA (contraste 4.38:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "le-havre",
+      "name": "Le Havre",
+      "shortName": "HAC",
+      "city": "Le Havre",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#79BCE7",
+        "secondary": "#193260",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#193260",
+        "secondary": "#79BCE7",
+        "reason": "« Ciel et marine » : le bleu ciel est trop clair ; bleu marine en primaire, bleu ciel en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "le-mans",
+      "name": "Le Mans",
+      "shortName": "LMFC",
+      "city": "Le Mans",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFF00",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFF00",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "shortName": "RCL",
+      "city": "Lens",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#FFF200",
+        "secondary": "#EC1C24",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": {
+        "primary": "#EA141C",
+        "secondary": "#FFF200",
+        "reason": "« Sang et or » : le jaune est trop clair ; rouge en primaire (assombri si besoin), jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "shortName": "LOSC",
+      "city": "Lille",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#FE0000",
+        "secondary": "#221F64",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#EA0000",
+        "secondary": "#221F64",
+        "reason": "auto-darkened from #FE0000 for WCAG AA (contraste 4.03:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "shortName": "FCL",
+      "city": "Lorient",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#F58113",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#B45B08",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #F58113 for WCAG AA (contraste 2.61:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "shortName": "OL",
+      "city": "Lyon",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#0F23AA",
+        "tertiary": "#F40043"
+      },
+      "themeOverride": {
+        "primary": "#0F23AA",
+        "secondary": "#F40043",
+        "reason": "Maillot blanc : bleu de l'OL (bande bleue et rouge) en primaire, rouge en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "shortName": "OM",
+      "city": "Marseille",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#2FAEE0",
+        "tertiary": "#BEA064"
+      },
+      "themeOverride": {
+        "primary": "#197DA5",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc : le blanc est déjà la base de l'app ; bleu ciel OM assombri jusqu'à AA, blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "shortName": "ASM",
+      "city": "Monaco",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#E51B22",
+        "secondary": "#CB9F18",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "shortName": "OGCN",
+      "city": "Nice",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#ED1C24",
+        "tertiary": "#B59A54"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "paris-fc",
+      "name": "Paris FC",
+      "shortName": "PFC",
+      "city": "Paris",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#000060",
+        "secondary": "#00AEE8",
+        "tertiary": "#87CEEB"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "shortName": "PSG",
+      "city": "Paris",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#004170",
+        "secondary": "#DA291C",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "shortName": "SRFC",
+      "city": "Rennes",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#E13327",
+        "secondary": "#000000",
+        "tertiary": "#FCBC17"
+      },
+      "themeOverride": {
+        "primary": "#E02F23",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #E13327 for WCAG AA (contraste 4.46:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "shortName": "RCSA",
+      "city": "Strasbourg",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#009FE3",
+        "secondary": "#DC2F34",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#007BB0",
+        "secondary": "#DC2F34",
+        "reason": "auto-darkened from #009FE3 for WCAG AA (contraste 2.97:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "shortName": "TFC",
+      "city": "Toulouse",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#492359",
+        "secondary": "#FFFFFF",
+        "tertiary": "#F0194E"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "troyes",
+      "name": "Troyes",
+      "shortName": "TRO",
+      "city": "Troyes",
+      "country": "FR",
+      "league": "ligue1",
+      "colors": {
+        "primary": "#006EB2",
+        "secondary": "#FFFFFF",
+        "tertiary": "#DC9D0F"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "annecy",
+      "name": "Annecy",
+      "shortName": "FCA",
+      "city": "Annecy",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#E30613",
+        "secondary": "#FF0000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "boulogne",
+      "name": "Boulogne",
+      "shortName": "BOU",
+      "city": "Boulogne-sur-Mer",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#D10313",
+        "secondary": "#000000",
+        "tertiary": "#FF3232"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "clermont",
+      "name": "Clermont",
+      "shortName": "CF63",
+      "city": "Clermont-Ferrand",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#C50C46",
+        "secondary": "#002D6A",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "shortName": "DFCO",
+      "city": "Dijon",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "dunkerque",
+      "name": "Dunkerque",
+      "shortName": "USLD",
+      "city": "Dunkerque",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#000066",
+        "secondary": "#FFFFFF",
+        "tertiary": "#990000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "grenoble",
+      "name": "Grenoble",
+      "shortName": "GF38",
+      "city": "Grenoble",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#004899",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "guingamp",
+      "name": "Guingamp",
+      "shortName": "EAG",
+      "city": "Guingamp",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "laval",
+      "name": "Laval",
+      "shortName": "LAV",
+      "city": "Laval",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FF6000",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#CC4D00",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #FF6000 for WCAG AA (contraste 3.03:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "shortName": "FCM",
+      "city": "Metz",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#6E0F12",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "shortName": "MHSC",
+      "city": "Montpellier",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#20234C",
+        "secondary": "#E66107",
+        "tertiary": "#7F7D7C"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "shortName": "ASNL",
+      "city": "Nancy",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#000000",
+        "secondary": "#121212",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #000000."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "shortName": "FCN",
+      "city": "Nantes",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FCD405",
+        "secondary": "#1B8F3A",
+        "tertiary": "#00B211"
+      },
+      "themeOverride": {
+        "primary": "#198637",
+        "secondary": "#FCD405",
+        "reason": "Jaune trop clair : vert des Canaris en primaire (assombri si besoin), jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "pau",
+      "name": "Pau",
+      "shortName": "PAU",
+      "city": "Pau",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#191970",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#8A7400",
+        "secondary": "#191970",
+        "reason": "auto-darkened from #FFD700 for WCAG AA (contraste 1.40:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "red-star",
+      "name": "Red Star",
+      "shortName": "RSFC",
+      "city": "Saint-Ouen",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#0C6646",
+        "tertiary": "#124940"
+      },
+      "themeOverride": {
+        "primary": "#0C6646",
+        "secondary": "#124940",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #0C6646."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "shortName": "SDR",
+      "city": "Reims",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "rodez",
+      "name": "Rodez",
+      "shortName": "RAF",
+      "city": "Rodez",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#DD0000",
+        "secondary": "#FCB726",
+        "tertiary": "#FFC90E"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "shortName": "ASSE",
+      "city": "Saint-Étienne",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#139A5A",
+        "secondary": "#19985B",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#11884F",
+        "secondary": "#19985B",
+        "reason": "auto-darkened from #139A5A for WCAG AA (contraste 3.62:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "sochaux",
+      "name": "Sochaux",
+      "shortName": "FCSM",
+      "city": "Montbéliard",
+      "country": "FR",
+      "league": "ligue2",
+      "colors": {
+        "primary": "#FFFE2A",
+        "secondary": "#0B1031",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#767600",
+        "secondary": "#0B1031",
+        "reason": "auto-darkened from #FFFE2A for WCAG AA (contraste 1.08:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#EF0107",
+        "secondary": "#FFFFFF",
+        "tertiary": "#063672"
+      },
+      "themeOverride": {
+        "primary": "#EA0107",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #EF0107 for WCAG AA (contraste 4.49:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "shortName": "AVL",
+      "city": "Birmingham",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#670E36",
+        "secondary": "#95BFE5",
+        "tertiary": "#FEE407"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "shortName": "BOU",
+      "city": "Bournemouth",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#DA291C",
+        "secondary": "#000000",
+        "tertiary": "#800080"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "brentford",
+      "name": "Brentford",
+      "shortName": "BRE",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#E30613",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FBB800"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "brighton-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "nameFr": "Brighton",
+      "shortName": "BHA",
+      "city": "Brighton",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#0057B8",
+        "secondary": "#FFFFFF",
+        "tertiary": "#1144DD"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#034694",
+        "secondary": "#FFFFFF",
+        "tertiary": "#DBA111"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "coventry-city",
+      "name": "Coventry City",
+      "shortName": "COV",
+      "city": "Coventry",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#77BBFF",
+        "secondary": "#FFFFFF",
+        "tertiary": "#62B5E5"
+      },
+      "themeOverride": {
+        "primary": "#0074E7",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #77BBFF for WCAG AA (contraste 2.03:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "shortName": "CRY",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#1B458F",
+        "secondary": "#C4122E",
+        "tertiary": "#A7A5A6"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "shortName": "EVE",
+      "city": "Liverpool",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#003399",
+        "secondary": "#FFFFFF",
+        "tertiary": "#0000FF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "shortName": "FUL",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#CC0000"
+      },
+      "themeOverride": {
+        "primary": "#121212",
+        "secondary": "#CC0000",
+        "reason": "Club noir et blanc : noir (identique au texte de l'app) en primaire, rouge du blason en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "hull-city",
+      "name": "Hull City",
+      "shortName": "HUL",
+      "city": "Hull",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#F18A01",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#AF6401",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #F18A01 for WCAG AA (contraste 2.51:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "ipswich-town",
+      "name": "Ipswich Town",
+      "shortName": "IPS",
+      "city": "Ipswich",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#3A64A3",
+        "secondary": "#DE2C37",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "leeds-united",
+      "name": "Leeds United",
+      "shortName": "LEE",
+      "city": "Leeds",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#1D428A",
+        "tertiary": "#FFCD00"
+      },
+      "themeOverride": {
+        "primary": "#1D428A",
+        "secondary": "#FFCD00",
+        "reason": "Maillot blanc : bleu Leeds (#1D428A) en primaire, jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "shortName": "LIV",
+      "city": "Liverpool",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#C8102E",
+        "secondary": "#00B2A9",
+        "tertiary": "#F6EB61"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "shortName": "MCI",
+      "city": "Manchester",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#6CABDD",
+        "secondary": "#1C2C5B",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#2B7AB8",
+        "secondary": "#1C2C5B",
+        "reason": "Bleu ciel assombri jusqu'à AA (teinte conservée), bleu marine City en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "shortName": "MUN",
+      "city": "Manchester",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#DA291C",
+        "secondary": "#FBE122",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "shortName": "NEW",
+      "city": "Newcastle",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#241F20",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "shortName": "NFO",
+      "city": "Nottingham",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#DD0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#D70926"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sunderland",
+      "name": "Sunderland",
+      "shortName": "SUN",
+      "city": "Sunderland",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#EB172B",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#E91428",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #EB172B for WCAG AA (contraste 4.48:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "nameFr": "Tottenham",
+      "shortName": "TOT",
+      "city": "Londres",
+      "country": "GB",
+      "league": "premier_league",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#132257",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#132257",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc : bleu marine des Spurs (#132257) en primaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "alaves",
+      "name": "Alavés",
+      "shortName": "ALA",
+      "city": "Vitoria-Gasteiz",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#0761AF",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "shortName": "ATH",
+      "city": "Bilbao",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#EE2523",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#EA1412",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #EE2523 for WCAG AA (contraste 4.26:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "shortName": "ATM",
+      "city": "Madrid",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#CB3524",
+        "secondary": "#272E61",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "nameFr": "FC Barcelone",
+      "shortName": "FCB",
+      "city": "Barcelone",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#004D98",
+        "secondary": "#A50044",
+        "tertiary": "#EDBB00"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "shortName": "CEL",
+      "city": "Vigo",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#8AC3EE",
+        "secondary": "#E5254E",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#1C78BE",
+        "secondary": "#E5254E",
+        "reason": "Bleu ciel assombri jusqu'à AA, rouge en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "deportivo-a-coruna",
+      "name": "Deportivo A Coruña",
+      "nameFr": "Deportivo La Corogne",
+      "shortName": "DEP",
+      "city": "La Corogne",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#0033C4",
+        "secondary": "#0000FF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "elche",
+      "name": "Elche",
+      "shortName": "ELC",
+      "city": "Elche",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#05642C",
+        "secondary": "#FFFFFF",
+        "tertiary": "#E6C777"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "shortName": "ESP",
+      "city": "Barcelone",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#007FC8",
+        "secondary": "#FFFFFF",
+        "tertiary": "#DF1116"
+      },
+      "themeOverride": {
+        "primary": "#0079BE",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #007FC8 for WCAG AA (contraste 4.31:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "shortName": "GET",
+      "city": "Getafe",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#005999",
+        "secondary": "#C43A2F",
+        "tertiary": "#FCED0B"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "shortName": "LEV",
+      "city": "Valence",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#C60B46",
+        "secondary": "#222730",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "shortName": "MAL",
+      "city": "Malaga",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#103E9E",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#103E9E",
+        "secondary": "#121212",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #103E9E."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "shortName": "OSA",
+      "city": "Pampelune",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#D91A21",
+        "secondary": "#0A346F",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "racing-santander",
+      "name": "Racing Santander",
+      "shortName": "RAC",
+      "city": "Santander",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#369028"
+      },
+      "themeOverride": {
+        "primary": "#328425",
+        "secondary": "#000000",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #369028 assombrie en #328425 pour WCAG AA."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "shortName": "RAY",
+      "city": "Madrid",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#E53027",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": {
+        "primary": "#E4271E",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc à bande rouge : rouge de la bande en primaire (assombri si nécessaire)."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "nameFr": "Betis Séville",
+      "shortName": "BET",
+      "city": "Séville",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#00954C",
+        "secondary": "#FFFFFF",
+        "tertiary": "#359B5C"
+      },
+      "themeOverride": {
+        "primary": "#008644",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #00954C for WCAG AA (contraste 3.89:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "RMA",
+      "city": "Madrid",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FEBE10",
+        "tertiary": "#00529F"
+      },
+      "themeOverride": {
+        "primary": "#00529F",
+        "secondary": "#FEBE10",
+        "reason": "Maillot blanc : bleu Real Madrid (#00529F) en primaire, or en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "shortName": "RSO",
+      "city": "Saint-Sébastien",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#0067B1",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "nameFr": "Séville FC",
+      "shortName": "SEV",
+      "city": "Séville",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#F43333",
+        "tertiary": "#C79100"
+      },
+      "themeOverride": {
+        "primary": "#EC0D0D",
+        "secondary": "#C79100",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #F43333 assombrie en #EC0D0D pour WCAG AA."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "nameFr": "Valence CF",
+      "shortName": "VAL",
+      "city": "Valence",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FF671F",
+        "secondary": "#000000",
+        "tertiary": "#024560"
+      },
+      "themeOverride": {
+        "primary": "#D14300",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #FF671F for WCAG AA (contraste 2.91:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "shortName": "VIL",
+      "city": "Villarreal",
+      "country": "ES",
+      "league": "la_liga",
+      "colors": {
+        "primary": "#FFE667",
+        "secondary": "#005187",
+        "tertiary": "#FFFF00"
+      },
+      "themeOverride": {
+        "primary": "#005187",
+        "secondary": "#FFE667",
+        "reason": "Jaune trop clair : bleu marine du club en primaire, jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "nameFr": "Milan AC",
+      "shortName": "MIL",
+      "city": "Milan",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#FB090B",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#EC0406",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #FB090B for WCAG AA (contraste 4.08:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "shortName": "ATA",
+      "city": "Bergame",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#1E71B8",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "shortName": "BOL",
+      "city": "Bologne",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#A21C26",
+        "secondary": "#1A2F48",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "shortName": "CAG",
+      "city": "Cagliari",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#002350",
+        "secondary": "#AD002A",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "shortName": "COM",
+      "city": "Côme",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#114169",
+        "secondary": "#FFFFFF",
+        "tertiary": "#215AAE"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "shortName": "FIO",
+      "city": "Florence",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#482E92",
+        "secondary": "#FFFFFF",
+        "tertiary": "#A29160"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "frosinone",
+      "name": "Frosinone",
+      "shortName": "FRO",
+      "city": "Frosinone",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#FFDD00",
+        "secondary": "#004393",
+        "tertiary": "#006AB3"
+      },
+      "themeOverride": {
+        "primary": "#857300",
+        "secondary": "#004393",
+        "reason": "auto-darkened from #FFDD00 for WCAG AA (contraste 1.35:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "shortName": "GEN",
+      "city": "Gênes",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#AD1919",
+        "secondary": "#05232F",
+        "tertiary": "#FFD400"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "shortName": "INT",
+      "city": "Milan",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#010E80",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "nameFr": "Juventus Turin",
+      "shortName": "JUV",
+      "city": "Turin",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FFC9E1"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "nameFr": "Lazio Rome",
+      "shortName": "LAZ",
+      "city": "Rome",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#87D8F7",
+        "secondary": "#FFFFFF",
+        "tertiary": "#242D4E"
+      },
+      "themeOverride": {
+        "primary": "#0B7FAC",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #87D8F7 for WCAG AA (contraste 1.59:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "shortName": "LEC",
+      "city": "Lecce",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#FFF200",
+        "secondary": "#ED1B23",
+        "tertiary": "#000055"
+      },
+      "themeOverride": {
+        "primary": "#7F7900",
+        "secondary": "#ED1B23",
+        "reason": "auto-darkened from #FFF200 for WCAG AA (contraste 1.17:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "monza",
+      "name": "Monza",
+      "shortName": "MON",
+      "city": "Monza",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#EC173A",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": {
+        "primary": "#E61336",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #EC173A for WCAG AA (contraste 4.42:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "nameFr": "Naples",
+      "shortName": "NAP",
+      "city": "Naples",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#12A0D7",
+        "secondary": "#003C82",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#0E7DA8",
+        "secondary": "#003C82",
+        "reason": "auto-darkened from #12A0D7 for WCAG AA (contraste 2.98:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "nameFr": "Parme",
+      "shortName": "PAR",
+      "city": "Parme",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#1B4094",
+        "tertiary": "#FFD200"
+      },
+      "themeOverride": {
+        "primary": "#1B4094",
+        "secondary": "#FFD200",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #1B4094."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "nameFr": "AS Roma",
+      "shortName": "ROM",
+      "city": "Rome",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#8E1F2F",
+        "secondary": "#F0BC42",
+        "tertiary": "#CACACC"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "shortName": "SAS",
+      "city": "Reggio d'Émilie",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#00A752",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#008843",
+        "secondary": "#000000",
+        "reason": "auto-darkened from #00A752 for WCAG AA (contraste 3.16:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "shortName": "TOR",
+      "city": "Turin",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#8A1E03",
+        "secondary": "#FFFFFF",
+        "tertiary": "#EEB111"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "shortName": "UDI",
+      "city": "Udine",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#8B7D37"
+      },
+      "themeOverride": {
+        "primary": "#121212",
+        "secondary": "#FFFFFF",
+        "reason": "Club bianconero : noir en primaire, blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "venezia",
+      "name": "Venezia",
+      "shortName": "VEN",
+      "city": "Venise",
+      "country": "IT",
+      "league": "serie_a",
+      "colors": {
+        "primary": "#101010",
+        "secondary": "#FF6B00",
+        "tertiary": "#006937"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "nameFr": "FC Cologne",
+      "shortName": "KOE",
+      "city": "Cologne",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#ED1C24",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#E7121A",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc : rouge du club en primaire (assombri pour AA)."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "shortName": "B04",
+      "city": "Leverkusen",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#E32221",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "shortName": "BAY",
+      "city": "Munich",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#DC052D",
+        "secondary": "#0066B2",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "shortName": "BVB",
+      "city": "Dortmund",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#FDE100",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#121212",
+        "secondary": "#FDE100",
+        "reason": "Jaune trop clair pour du texte : noir (2e couleur du BVB) en primaire, jaune conservé en secondaire (pastille, dégradés)."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "shortName": "BMG",
+      "city": "Mönchengladbach",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "nameFr": "Eintracht Francfort",
+      "shortName": "SGE",
+      "city": "Francfort",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#E1000F",
+        "secondary": "#000000",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "nameFr": "Augsbourg",
+      "shortName": "FCA",
+      "city": "Augsbourg",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#BA3733",
+        "secondary": "#46714D",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "nameFr": "Hambourg SV",
+      "shortName": "HSV",
+      "city": "Hambourg",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#0A3F86",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "nameFr": "Mayence 05",
+      "shortName": "M05",
+      "city": "Mayence",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#ED1C24",
+        "secondary": "#FFFFFF",
+        "tertiary": "#918F90"
+      },
+      "themeOverride": {
+        "primary": "#E7121A",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #ED1C24 for WCAG AA (contraste 4.38:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "shortName": "RBL",
+      "city": "Leipzig",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#DD0741",
+        "secondary": "#FFFFFF",
+        "tertiary": "#001F47"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "nameFr": "SC Fribourg",
+      "shortName": "SCF",
+      "city": "Fribourg-en-Brisgau",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FD1220"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sc-paderborn",
+      "name": "SC Paderborn",
+      "shortName": "PAD",
+      "city": "Paderborn",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "shortName": "S04",
+      "city": "Gelsenkirchen",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#004D9D",
+        "secondary": "#FFFFFF",
+        "tertiary": "#0000DD"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "sv-elversberg",
+      "name": "SV Elversberg",
+      "nameFr": "Elversberg",
+      "shortName": "SVE",
+      "city": "Spiesen-Elversberg",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#D3BF8D",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "nameFr": "Hoffenheim",
+      "shortName": "TSG",
+      "city": "Sinsheim",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#1961B5",
+        "secondary": "#FFFFFF",
+        "tertiary": "#0000FF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "union-berlin",
+      "name": "Union Berlin",
+      "shortName": "FCU",
+      "city": "Berlin",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#EB1923",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FDDC02"
+      },
+      "themeOverride": {
+        "primary": "#EB141F",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #EB1923 for WCAG AA (contraste 4.47:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "shortName": "VFB",
+      "city": "Stuttgart",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#E32219",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FFED00"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "nameFr": "Werder Brême",
+      "shortName": "SVW",
+      "city": "Brême",
+      "country": "DE",
+      "league": "bundesliga",
+      "colors": {
+        "primary": "#1D9053",
+        "secondary": "#FFFFFF",
+        "tertiary": "#009A59"
+      },
+      "themeOverride": {
+        "primary": "#1A834C",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #1D9053 for WCAG AA (contraste 4.06:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "academico-de-viseu",
+      "name": "Académico de Viseu",
+      "nameFr": "Académico Viseu",
+      "shortName": "AVI",
+      "city": "Viseu",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "alverca",
+      "name": "Alverca",
+      "shortName": "ALV",
+      "city": "Alverca do Ribatejo",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#0000FF",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "arouca",
+      "name": "Arouca",
+      "shortName": "ARO",
+      "city": "Arouca",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FEF405",
+        "secondary": "#024CAB",
+        "tertiary": "#0000FF"
+      },
+      "themeOverride": {
+        "primary": "#7E7901",
+        "secondary": "#024CAB",
+        "reason": "auto-darkened from #FEF405 for WCAG AA (contraste 1.16:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "benfica",
+      "name": "Benfica",
+      "shortName": "SLB",
+      "city": "Lisbonne",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#E83030",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#E62222",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #E83030 for WCAG AA (contraste 4.29:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "braga",
+      "name": "Braga",
+      "nameFr": "SC Braga",
+      "shortName": "SCB",
+      "city": "Braga",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#C82B20",
+        "secondary": "#868257",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "casa-pia",
+      "name": "Casa Pia",
+      "shortName": "CPA",
+      "city": "Lisbonne",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#E40B1E",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "estoril-praia",
+      "name": "Estoril Praia",
+      "shortName": "EST",
+      "city": "Estoril",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#4C4F94",
+        "secondary": "#FFE302",
+        "tertiary": "#0097D9"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "estrela-da-amadora",
+      "name": "Estrela da Amadora",
+      "nameFr": "Estrela Amadora",
+      "shortName": "EAM",
+      "city": "Amadora",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#BE3C2C",
+        "secondary": "#3D8F47",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "famalicao",
+      "name": "Famalicão",
+      "shortName": "FAM",
+      "city": "Vila Nova de Famalicão",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#0B3D6B",
+        "tertiary": "#F0C61C"
+      },
+      "themeOverride": {
+        "primary": "#0B3D6B",
+        "secondary": "#F0C61C",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #0B3D6B."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "gil-vicente",
+      "name": "Gil Vicente",
+      "shortName": "GIL",
+      "city": "Barcelos",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#D52929",
+        "secondary": "#083363",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "maritimo",
+      "name": "Marítimo",
+      "shortName": "MAR",
+      "city": "Funchal",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000044"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "moreirense",
+      "name": "Moreirense",
+      "shortName": "MOR",
+      "city": "Moreira de Cónegos",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#145F25",
+        "secondary": "#FFFFFF",
+        "tertiary": "#AF9713"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nacional",
+      "name": "Nacional",
+      "shortName": "NAC",
+      "city": "Funchal",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#FFE000"
+      },
+      "themeOverride": {
+        "primary": "#857400",
+        "secondary": "#000000",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #FFE000 assombrie en #857400 pour WCAG AA."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "nameFr": "FC Porto",
+      "shortName": "FCP",
+      "city": "Porto",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#00428C",
+        "secondary": "#FFFFFF",
+        "tertiary": "#D60019"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "rio-ave",
+      "name": "Rio Ave",
+      "shortName": "RAV",
+      "city": "Vila do Conde",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#009036",
+        "secondary": "#FFFFFF",
+        "tertiary": "#F08A00"
+      },
+      "themeOverride": {
+        "primary": "#008632",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #009036 for WCAG AA (contraste 4.16:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "santa-clara",
+      "name": "Santa Clara",
+      "shortName": "SCL",
+      "city": "Ponta Delgada",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000055"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "sporting-cp",
+      "name": "Sporting CP",
+      "nameFr": "Sporting Portugal",
+      "shortName": "SCP",
+      "city": "Lisbonne",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#008057",
+        "secondary": "#FFFFFF",
+        "tertiary": "#F3C242"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "vitoria-de-guimaraes",
+      "name": "Vitória de Guimarães",
+      "nameFr": "Vitória Guimarães",
+      "shortName": "VSC",
+      "city": "Guimarães",
+      "country": "PT",
+      "league": "liga_portugal",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#000000",
+        "secondary": "#121212",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #000000."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "ado-den-haag",
+      "name": "ADO Den Haag",
+      "shortName": "ADO",
+      "city": "La Haye",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#FFFF00",
+        "secondary": "#FFDD00",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#7A7A00",
+        "secondary": "#FFDD00",
+        "reason": "auto-darkened from #FFFF00 for WCAG AA (contraste 1.07:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "ajax",
+      "name": "Ajax",
+      "nameFr": "Ajax Amsterdam",
+      "shortName": "AJX",
+      "city": "Amsterdam",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#D2122E",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "az",
+      "name": "AZ",
+      "nameFr": "AZ Alkmaar",
+      "shortName": "AZ",
+      "city": "Alkmaar",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#DB0021",
+        "secondary": "#FFFFFF",
+        "tertiary": "#0032FC"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "cambuur",
+      "name": "Cambuur",
+      "shortName": "CAM",
+      "city": "Leeuwarden",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#FFEE00",
+        "secondary": "#0000FF",
+        "tertiary": "#888888"
+      },
+      "themeOverride": {
+        "primary": "#7F7700",
+        "secondary": "#0000FF",
+        "reason": "auto-darkened from #FFEE00 for WCAG AA (contraste 1.20:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "excelsior",
+      "name": "Excelsior",
+      "shortName": "EXC",
+      "city": "Rotterdam",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#E2001A",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "feyenoord",
+      "name": "Feyenoord",
+      "shortName": "FEY",
+      "city": "Rotterdam",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#E2001A",
+        "secondary": "#FFFFFF",
+        "tertiary": "#AE9962"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "fortuna-sittard",
+      "name": "Fortuna Sittard",
+      "shortName": "FOR",
+      "city": "Sittard",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#00694D",
+        "secondary": "#FFE404",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "go-ahead-eagles",
+      "name": "Go Ahead Eagles",
+      "shortName": "GAE",
+      "city": "Deventer",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#C10130",
+        "secondary": "#FFD700",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "groningen",
+      "name": "Groningen",
+      "nameFr": "FC Groningue",
+      "shortName": "GRO",
+      "city": "Groningue",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#121212"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "heerenveen",
+      "name": "Heerenveen",
+      "nameFr": "SC Heerenveen",
+      "shortName": "HEE",
+      "city": "Heerenveen",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#004485",
+        "secondary": "#FFFFFF",
+        "tertiary": "#E8363C"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nec",
+      "name": "N.E.C.",
+      "nameFr": "NEC Nimègue",
+      "shortName": "NEC",
+      "city": "Nimègue",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#ED1B24",
+        "secondary": "#159A6F",
+        "tertiary": "#080808"
+      },
+      "themeOverride": {
+        "primary": "#EB131C",
+        "secondary": "#159A6F",
+        "reason": "auto-darkened from #ED1B24 for WCAG AA (contraste 4.39:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "pec-zwolle",
+      "name": "PEC Zwolle",
+      "shortName": "PEC",
+      "city": "Zwolle",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#1E59AE",
+        "secondary": "#6AC2EE",
+        "tertiary": "#EF2C30"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "psv",
+      "name": "PSV",
+      "nameFr": "PSV Eindhoven",
+      "shortName": "PSV",
+      "city": "Eindhoven",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#ED1C24",
+        "secondary": "#FFFFFF",
+        "tertiary": "#BB955E"
+      },
+      "themeOverride": {
+        "primary": "#E7121A",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #ED1C24 for WCAG AA (contraste 4.38:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "sparta-rotterdam",
+      "name": "Sparta Rotterdam",
+      "shortName": "SPA",
+      "city": "Rotterdam",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#D91D38",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "telstar",
+      "name": "Telstar",
+      "shortName": "TEL",
+      "city": "Velsen",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#016DB7",
+        "tertiary": "#1B3359"
+      },
+      "themeOverride": {
+        "primary": "#016DB7",
+        "secondary": "#1B3359",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #016DB7."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "twente",
+      "name": "Twente",
+      "nameFr": "FC Twente",
+      "shortName": "TWE",
+      "city": "Enschede",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#E6001A",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "utrecht",
+      "name": "Utrecht",
+      "nameFr": "FC Utrecht",
+      "shortName": "UTR",
+      "city": "Utrecht",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#D82333",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "willem-ii",
+      "name": "Willem II",
+      "shortName": "WIL",
+      "city": "Tilburg",
+      "country": "NL",
+      "league": "eredivisie",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#121212",
+        "tertiary": "#121212"
+      },
+      "themeOverride": {
+        "primary": "#121212",
+        "secondary": "#FFFFFF",
+        "reason": "Couleur principale #FFFFFF (blanc / très claire) : le blanc est déjà la base de l'app ; on utilise la couleur secondaire du club #121212."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-spain",
+      "name": "Spain",
+      "nameFr": "Espagne",
+      "nameEn": "Spain",
+      "shortName": "ESP",
+      "city": "Espagne",
+      "country": "ES",
+      "league": "national",
+      "fifaRank": 1,
+      "colors": {
+        "primary": "#C60B1E",
+        "secondary": "#FFC400",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-argentina",
+      "name": "Argentina",
+      "nameFr": "Argentine",
+      "nameEn": "Argentina",
+      "shortName": "ARG",
+      "city": "Argentine",
+      "country": "AR",
+      "league": "national",
+      "fifaRank": 2,
+      "colors": {
+        "primary": "#74ACDF",
+        "secondary": "#FFFFFF",
+        "tertiary": "#F6B40E"
+      },
+      "themeOverride": {
+        "primary": "#2C7AC1",
+        "secondary": "#FFFFFF",
+        "reason": "Bleu ciel albiceleste assombri jusqu'à AA, blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-france",
+      "name": "France",
+      "nameFr": "France",
+      "nameEn": "France",
+      "shortName": "FRA",
+      "city": "France",
+      "country": "FR",
+      "league": "national",
+      "fifaRank": 3,
+      "colors": {
+        "primary": "#21304D",
+        "secondary": "#ED2939",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-england",
+      "name": "England",
+      "nameFr": "Angleterre",
+      "nameEn": "England",
+      "shortName": "ENG",
+      "city": "Angleterre",
+      "country": "GB",
+      "league": "national",
+      "fifaRank": 4,
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#5AADD6",
+        "tertiary": "#181B3A"
+      },
+      "themeOverride": {
+        "primary": "#297DA6",
+        "secondary": "#FFFFFF",
+        "reason": "Maillot blanc : bleu marine des Three Lions en primaire (assombri si besoin), blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-brazil",
+      "name": "Brazil",
+      "nameFr": "Brésil",
+      "nameEn": "Brazil",
+      "shortName": "BRA",
+      "city": "Brésil",
+      "country": "BR",
+      "league": "national",
+      "fifaRank": 5,
+      "colors": {
+        "primary": "#FFDF00",
+        "secondary": "#009C3B",
+        "tertiary": "#002776"
+      },
+      "themeOverride": {
+        "primary": "#008833",
+        "secondary": "#FFDF00",
+        "reason": "Jaune trop clair : vert du drapeau en primaire (assombri pour AA), jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-morocco",
+      "name": "Morocco",
+      "nameFr": "Maroc",
+      "nameEn": "Morocco",
+      "shortName": "MAR",
+      "city": "Maroc",
+      "country": "MA",
+      "league": "national",
+      "fifaRank": 6,
+      "colors": {
+        "primary": "#C1272D",
+        "secondary": "#006233",
+        "tertiary": "#D29D63"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-portugal",
+      "name": "Portugal",
+      "nameFr": "Portugal",
+      "nameEn": "Portugal",
+      "shortName": "POR",
+      "city": "Portugal",
+      "country": "PT",
+      "league": "national",
+      "fifaRank": 7,
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#006600",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#006600",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-belgium",
+      "name": "Belgium",
+      "nameFr": "Belgique",
+      "nameEn": "Belgium",
+      "shortName": "BEL",
+      "city": "Belgique",
+      "country": "BE",
+      "league": "national",
+      "fifaRank": 8,
+      "colors": {
+        "primary": "#E30613",
+        "secondary": "#FFD500",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-netherlands",
+      "name": "Netherlands",
+      "nameFr": "Pays-Bas",
+      "nameEn": "Netherlands",
+      "shortName": "NED",
+      "city": "Pays-Bas",
+      "country": "NL",
+      "league": "national",
+      "fifaRank": 9,
+      "colors": {
+        "primary": "#F36C21",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#C74E0B",
+        "secondary": "#21468B",
+        "reason": "Orange assombri jusqu'à AA (teinte conservée), bleu du drapeau en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-mexico",
+      "name": "Mexico",
+      "nameFr": "Mexique",
+      "nameEn": "Mexico",
+      "shortName": "MEX",
+      "city": "Mexique",
+      "country": "MX",
+      "league": "national",
+      "fifaRank": 10,
+      "colors": {
+        "primary": "#006847",
+        "secondary": "#FFFFFF",
+        "tertiary": "#CE1126"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-colombia",
+      "name": "Colombia",
+      "nameFr": "Colombie",
+      "nameEn": "Colombia",
+      "shortName": "COL",
+      "city": "Colombie",
+      "country": "CO",
+      "league": "national",
+      "fifaRank": 11,
+      "colors": {
+        "primary": "#FCD116",
+        "secondary": "#003893",
+        "tertiary": "#CE1126"
+      },
+      "themeOverride": {
+        "primary": "#003893",
+        "secondary": "#FCD116",
+        "reason": "Jaune trop clair : bleu du drapeau en primaire, jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-germany",
+      "name": "Germany",
+      "nameFr": "Allemagne",
+      "nameEn": "Germany",
+      "shortName": "GER",
+      "city": "Allemagne",
+      "country": "DE",
+      "league": "national",
+      "fifaRank": 12,
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "tertiary": "#DD0000"
+      },
+      "themeOverride": {
+        "primary": "#121212",
+        "secondary": "#DD0000",
+        "reason": "Maillot blanc : noir en primaire, rouge du drapeau en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-croatia",
+      "name": "Croatia",
+      "nameFr": "Croatie",
+      "nameEn": "Croatia",
+      "shortName": "CRO",
+      "city": "Croatie",
+      "country": "HR",
+      "league": "national",
+      "fifaRank": 13,
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#171796"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "Rouge du damier assombri jusqu'à AA, blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-switzerland",
+      "name": "Switzerland",
+      "nameFr": "Suisse",
+      "nameEn": "Switzerland",
+      "shortName": "SUI",
+      "city": "Suisse",
+      "country": "CH",
+      "league": "national",
+      "fifaRank": 14,
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#740C14"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #FF0000 for WCAG AA (contraste 4.00:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-italy",
+      "name": "Italy",
+      "nameFr": "Italie",
+      "nameEn": "Italy",
+      "shortName": "ITA",
+      "city": "Italie",
+      "country": "IT",
+      "league": "national",
+      "fifaRank": 15,
+      "colors": {
+        "primary": "#1A57B8",
+        "secondary": "#FFFFFF",
+        "tertiary": "#0048BA"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-united-states",
+      "name": "United States",
+      "nameFr": "États-Unis",
+      "nameEn": "United States",
+      "shortName": "USA",
+      "city": "États-Unis",
+      "country": "US",
+      "league": "national",
+      "fifaRank": 16,
+      "colors": {
+        "primary": "#002868",
+        "secondary": "#BF0A30",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-japan",
+      "name": "Japan",
+      "nameFr": "Japon",
+      "nameEn": "Japan",
+      "shortName": "JPN",
+      "city": "Japon",
+      "country": "JP",
+      "league": "national",
+      "fifaRank": 17,
+      "colors": {
+        "primary": "#000080",
+        "secondary": "#FFFFFF",
+        "tertiary": "#001040"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-senegal",
+      "name": "Senegal",
+      "nameFr": "Sénégal",
+      "nameEn": "Senegal",
+      "shortName": "SEN",
+      "city": "Sénégal",
+      "country": "SN",
+      "league": "national",
+      "fifaRank": 18,
+      "colors": {
+        "primary": "#00853F",
+        "secondary": "#FDEF42",
+        "tertiary": "#E31B23"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-norway",
+      "name": "Norway",
+      "nameFr": "Norvège",
+      "nameEn": "Norway",
+      "shortName": "NOR",
+      "city": "Norvège",
+      "country": "NO",
+      "league": "national",
+      "fifaRank": 19,
+      "colors": {
+        "primary": "#BA0C2F",
+        "secondary": "#00205B",
+        "tertiary": "#FFFFFF"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-uruguay",
+      "name": "Uruguay",
+      "nameFr": "Uruguay",
+      "nameEn": "Uruguay",
+      "shortName": "URU",
+      "city": "Uruguay",
+      "country": "UY",
+      "league": "national",
+      "fifaRank": 20,
+      "colors": {
+        "primary": "#55B5E5",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#1B7EAF",
+        "secondary": "#FFFFFF",
+        "reason": "Bleu celeste assombri jusqu'à AA, blanc en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-denmark",
+      "name": "Denmark",
+      "nameFr": "Danemark",
+      "nameEn": "Denmark",
+      "shortName": "DEN",
+      "city": "Danemark",
+      "country": "DK",
+      "league": "national",
+      "fifaRank": 21,
+      "colors": {
+        "primary": "#C8102E",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-iran",
+      "name": "Iran",
+      "nameFr": "Iran",
+      "nameEn": "Iran",
+      "shortName": "IRN",
+      "city": "Iran",
+      "country": "IR",
+      "league": "national",
+      "fifaRank": 22,
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#239F40",
+        "tertiary": "#DA0000"
+      },
+      "themeOverride": {
+        "primary": "#1D8636",
+        "secondary": "#DA0000",
+        "reason": "Maillot blanc : vert du drapeau en primaire (assombri pour AA), rouge en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-austria",
+      "name": "Austria",
+      "nameFr": "Autriche",
+      "nameEn": "Austria",
+      "shortName": "AUT",
+      "city": "Autriche",
+      "country": "AT",
+      "league": "national",
+      "fifaRank": 23,
+      "colors": {
+        "primary": "#ED2939",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#E91425",
+        "secondary": "#FFFFFF",
+        "reason": "auto-darkened from #ED2939 for WCAG AA (contraste 4.22:1)"
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-egypt",
+      "name": "Egypt",
+      "nameFr": "Égypte",
+      "nameEn": "Egypt",
+      "shortName": "EGY",
+      "city": "Égypte",
+      "country": "EG",
+      "league": "national",
+      "fifaRank": 24,
+      "colors": {
+        "primary": "#CE1126",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-ecuador",
+      "name": "Ecuador",
+      "nameFr": "Équateur",
+      "nameEn": "Ecuador",
+      "shortName": "ECU",
+      "city": "Équateur",
+      "country": "EC",
+      "league": "national",
+      "fifaRank": 25,
+      "colors": {
+        "primary": "#FFDD00",
+        "secondary": "#034EA2",
+        "tertiary": "#ED1C24"
+      },
+      "themeOverride": {
+        "primary": "#034EA2",
+        "secondary": "#FFDD00",
+        "reason": "Jaune trop clair : bleu du drapeau en primaire, jaune en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-nigeria",
+      "name": "Nigeria",
+      "nameFr": "Nigeria",
+      "nameEn": "Nigeria",
+      "shortName": "NGA",
+      "city": "Nigeria",
+      "country": "NG",
+      "league": "national",
+      "fifaRank": 26,
+      "colors": {
+        "primary": "#008751",
+        "secondary": "#FFFFFF",
+        "tertiary": "#009B68"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-turkey",
+      "name": "Turkey",
+      "nameFr": "Turquie",
+      "nameEn": "Turkey",
+      "shortName": "TUR",
+      "city": "Turquie",
+      "country": "TR",
+      "league": "national",
+      "fifaRank": 27,
+      "colors": {
+        "primary": "#E30A17",
+        "secondary": "#FFFFFF",
+        "tertiary": "#FF0000"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-australia",
+      "name": "Australia",
+      "nameFr": "Australie",
+      "nameEn": "Australia",
+      "shortName": "AUS",
+      "city": "Australie",
+      "country": "AU",
+      "league": "national",
+      "fifaRank": 28,
+      "colors": {
+        "primary": "#FFCD00",
+        "secondary": "#00843D",
+        "tertiary": "#07563E"
+      },
+      "themeOverride": {
+        "primary": "#00843D",
+        "secondary": "#FFCD00",
+        "reason": "Or trop clair : vert national en primaire, or en secondaire."
+      },
+      "logoUrl": null
+    },
+    {
+      "id": "nt-algeria",
+      "name": "Algeria",
+      "nameFr": "Algérie",
+      "nameEn": "Algeria",
+      "shortName": "ALG",
+      "city": "Algérie",
+      "country": "DZ",
+      "league": "national",
+      "fifaRank": 29,
+      "colors": {
+        "primary": "#006233",
+        "secondary": "#FFFFFF",
+        "tertiary": "#D21034"
+      },
+      "themeOverride": null,
+      "logoUrl": null
+    },
+    {
+      "id": "nt-canada",
+      "name": "Canada",
+      "nameFr": "Canada",
+      "nameEn": "Canada",
+      "shortName": "CAN",
+      "city": "Canada",
+      "country": "CA",
+      "league": "national",
+      "fifaRank": 30,
+      "colors": {
+        "primary": "#FF0000",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      },
+      "themeOverride": {
+        "primary": "#EB0000",
+        "secondary": "#FFFFFF",
+        "reason": "Rouge du drapeau assombri jusqu'à AA, blanc en secondaire."
+      },
+      "logoUrl": null
+    }
+  ]
+}

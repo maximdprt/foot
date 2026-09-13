@@ -1,0 +1,424 @@
+{
+  "common": {
+    "continue": "Continuer",
+    "skip": "Passer",
+    "back": "Retour",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "close": "Fermer",
+    "search": "Rechercher",
+    "soon": "Bientôt",
+    "comingSoon": "Bientôt disponible",
+    "loading": "Chargement…",
+    "ok": "OK",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "retry": "Réessayer",
+    "notSet": "Non renseigné",
+    "none": "Aucune",
+    "optional": "Facultatif",
+    "demoMode": "Mode démo local : Supabase n'est pas configuré, les données restent sur cet appareil.",
+    "error": "Une erreur est survenue. Réessaie."
+  },
+  "tabs": {
+    "home": "Home",
+    "training": "Entraînement",
+    "booking": "Réservation",
+    "social": "Social",
+    "profile": "Profil"
+  },
+  "emptyState": {
+    "subtitle": "Bientôt disponible"
+  },
+  "home": {
+    "title": "Home",
+    "greeting": "Salut {{name}} 👋",
+    "greetingGuest": "Salut 👋",
+    "visitorCard": {
+      "title": "Crée ton profil pour personnaliser ton app",
+      "subtitle": "Ton équipe, tes couleurs, tes objectifs.",
+      "create": "Créer un compte",
+      "login": "Se connecter",
+      "settings": "Réglages visiteur"
+    },
+    "emptyTitle": "Ton fil d'actu",
+    "shortcuts": "Raccourcis",
+    "tiles": {
+      "matches": "Matchs",
+      "sessions": "Séances",
+      "friends": "Amis",
+      "pitches": "Terrains"
+    }
+  },
+  "training": {
+    "title": "Entraînement",
+    "emptyTitle": "Tes entraînements",
+    "tiles": {
+      "programs": "Programmes",
+      "drills": "Exercices",
+      "history": "Historique"
+    }
+  },
+  "booking": {
+    "title": "Réservation",
+    "emptyTitle": "Réserve un terrain",
+    "tiles": {
+      "five": "Five",
+      "futsal": "Futsal",
+      "pitches": "Terrains",
+      "bookings": "Mes réservations"
+    }
+  },
+  "social": {
+    "title": "Social",
+    "emptyTitle": "Ta communauté",
+    "tiles": {
+      "friends": "Amis",
+      "teams": "Équipes",
+      "messages": "Messages",
+      "events": "Événements"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "guestTitle": "Ton profil",
+    "guestSubtitle": "Crée un compte pour afficher ton profil et personnaliser l'app.",
+    "settings": "Paramètres",
+    "favoriteTeam": "Équipe de cœur",
+    "noTeam": "Aucune équipe",
+    "emptyTitle": "Ton activité",
+    "tiles": {
+      "stats": "Statistiques",
+      "badges": "Badges",
+      "history": "Historique",
+      "team": "Mon équipe"
+    }
+  },
+  "auth": {
+    "signup": "Créer un compte",
+    "login": "Se connecter",
+    "apple": "Continuer avec Apple",
+    "google": "Continuer avec Google",
+    "or": "ou",
+    "email": "Email",
+    "password": "Mot de passe",
+    "emailPlaceholder": "toi@exemple.fr",
+    "passwordPlaceholder": "8 caractères minimum",
+    "forgotPassword": "Mot de passe oublié ?",
+    "submitSignup": "Créer mon compte",
+    "submitLogin": "Se connecter",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "legalHint": "En continuant, tu acceptes les CGU et la politique de confidentialité.",
+    "demoProvider": "Mode démo : connexion {{provider}} simulée",
+    "errors": {
+      "emailInvalid": "Entre une adresse email valide",
+      "passwordTooShort": "8 caractères minimum",
+      "emailTaken": "Un compte existe déjà avec cet email",
+      "invalidCredentials": "Email ou mot de passe incorrect",
+      "providerUnavailable": "Connexion {{provider}} indisponible pour le moment",
+      "confirmEmail": "Vérifie ta boîte mail pour confirmer ton compte",
+      "generic": "Une erreur est survenue. Réessaie."
+    },
+    "gate": {
+      "title": "Connecte-toi pour continuer",
+      "subtitle": "Crée un compte ou connecte-toi pour accéder à cette fonctionnalité.",
+      "signup": "Créer un compte",
+      "login": "Se connecter"
+    },
+    "forgot": {
+      "title": "Mot de passe oublié",
+      "subtitle": "Entre ton email, on t'envoie un lien pour le réinitialiser.",
+      "submit": "Envoyer le lien",
+      "sent": "Email envoyé ! Vérifie ta boîte de réception."
+    }
+  },
+  "onboarding": {
+    "stepOf": "Étape {{current}} sur {{total}}",
+    "welcome": {
+      "title": "Bienvenue sur {{app}}",
+      "subtitle": "Quelques questions pour personnaliser ton expérience.",
+      "cta": "C'est parti",
+      "duration": "Moins de 90 secondes"
+    },
+    "identity": {
+      "title": "Comment on t'appelle ?",
+      "subtitle": "Ton prénom ou un pseudo.",
+      "nameLabel": "Prénom ou pseudo",
+      "namePlaceholder": "Ex. Kylian",
+      "photoHint": "Photo de profil (facultatif)",
+      "camera": "Caméra",
+      "gallery": "Galerie",
+      "removePhoto": "Retirer la photo",
+      "nameError": "Entre entre 2 et 24 caractères",
+      "permissionDenied": "Permission refusée"
+    },
+    "plays": {
+      "title": "Tu joues déjà au foot ?",
+      "options": {
+        "regularly": "Oui, régulièrement",
+        "sometimes": "Oui, de temps en temps",
+        "returning": "J'ai arrêté, je reprends",
+        "beginner": "Non, je débute"
+      }
+    },
+    "level": {
+      "title": "Ton niveau ?",
+      "options": {
+        "beginner": "Débutant",
+        "leisure": "Loisir",
+        "confirmed": "Confirmé",
+        "competition": "Compétition (club fédéral)",
+        "high_level": "Haut niveau / semi-pro"
+      }
+    },
+    "club": {
+      "title": "Ton club actuel ?",
+      "subtitle": "Facultatif. Cherche ton club ou saisis-le librement.",
+      "placeholder": "Cherche ton club…",
+      "noClub": "Je n'ai pas de club",
+      "useFree": "Utiliser « {{name}} »",
+      "noResults": "Aucune suggestion : tu peux saisir le nom librement.",
+      "selected": "Club sélectionné"
+    },
+    "position": {
+      "title": "Ton poste préféré ?",
+      "options": {
+        "goalkeeper": "Gardien",
+        "defender": "Défenseur",
+        "midfielder": "Milieu",
+        "forward": "Attaquant",
+        "anywhere": "Je joue partout"
+      }
+    },
+    "location": {
+      "title": "Où es-tu ?",
+      "subtitle": "Ta région puis ta ville.",
+      "region": "Région",
+      "city": "Ville",
+      "regionPlaceholder": "Choisis ta région",
+      "cityPlaceholder": "Cherche ta ville…",
+      "useMyLocation": "Utiliser ma position",
+      "locating": "Localisation…",
+      "permissionDenied": "Permission refusée. Choisis ta ville manuellement.",
+      "locationError": "Impossible de te localiser. Choisis ta ville manuellement.",
+      "change": "Changer",
+      "useFree": "Utiliser « {{name}} »"
+    },
+    "playLocations": {
+      "title": "Où joues-tu le plus souvent ?",
+      "subtitle": "Plusieurs réponses possibles.",
+      "options": {
+        "five_indoor": "Five / foot à 5 indoor",
+        "futsal": "Futsal",
+        "club_pitch": "Terrain de club (foot à 11)",
+        "city_stadium": "City stade / terrain de quartier",
+        "anywhere": "Parc, plage, n'importe où"
+      }
+    },
+    "frequency": {
+      "title": "À quelle fréquence ?",
+      "options": {
+        "lt_monthly": "Moins d'1 fois par mois",
+        "monthly_1_3": "1 à 3 fois par mois",
+        "weekly_1": "1 fois par semaine",
+        "weekly_2_3": "2 à 3 fois par semaine",
+        "weekly_4_plus": "4 fois ou plus"
+      }
+    },
+    "goals": {
+      "title": "Tes objectifs ?",
+      "subtitle": "Choisis-en 1 à 3.",
+      "max": "3 objectifs maximum",
+      "options": {
+        "improve": "Progresser techniquement",
+        "fitness": "Rester en forme",
+        "find_matches": "Trouver des matchs / une équipe",
+        "meet_players": "Rencontrer des joueurs",
+        "compete": "Me préparer pour une compétition",
+        "fun": "Juste m'amuser"
+      }
+    },
+    "team": {
+      "title": "Ton équipe de cœur ?",
+      "subtitle": "L'app prend ses couleurs en direct. Modifiable plus tard.",
+      "none": "Aucune / plus tard",
+      "noneSubtitle": "Thème Neutre",
+      "searchPlaceholder": "Club, abréviation, ville…",
+      "confirm": "Confirmer",
+      "noResults": "Aucune équipe trouvée"
+    },
+    "summary": {
+      "title": "Ton profil",
+      "subtitle": "Tape une ligne pour la modifier.",
+      "validate": "Valider mon profil",
+      "noClub": "Sans club",
+      "rows": {
+        "identity": "Pseudo",
+        "plays": "Pratique",
+        "level": "Niveau",
+        "club": "Club",
+        "position": "Poste",
+        "location": "Localisation",
+        "playLocations": "Terrains",
+        "frequency": "Fréquence",
+        "goals": "Objectifs",
+        "team": "Équipe de cœur"
+      }
+    }
+  },
+  "leagues": {
+    "none": "Sans équipe",
+    "ligue1": "Ligue 1",
+    "ligue2": "Ligue 2",
+    "premier_league": "Premier League",
+    "la_liga": "La Liga",
+    "serie_a": "Serie A",
+    "bundesliga": "Bundesliga",
+    "liga_portugal": "Liga Portugal",
+    "eredivisie": "Eredivisie",
+    "national": "Sélections nationales"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "guestHint": "Connecte-toi pour accéder à tous les réglages.",
+    "sections": {
+      "account": "Compte",
+      "profile": "Mon profil",
+      "appearance": "Apparence",
+      "notifications": "Notifications",
+      "privacy": "Confidentialité",
+      "language": "Langue",
+      "help": "Aide & support",
+      "about": "À propos"
+    },
+    "logout": "Se déconnecter",
+    "logoutTitle": "Se déconnecter ?",
+    "logoutSubtitle": "Tu pourras te reconnecter à tout moment.",
+    "account": {
+      "title": "Compte",
+      "email": "Email",
+      "changePassword": "Changer le mot de passe",
+      "linkedAccounts": "Comptes liés",
+      "linked": "Lié",
+      "notLinked": "Non lié",
+      "deleteAccount": "Supprimer mon compte",
+      "delete": {
+        "title": "Supprimer ton compte ?",
+        "subtitle": "Ton profil, tes réglages et tes données seront effacés. Cette action est définitive.",
+        "continue": "Continuer",
+        "title2": "Dernière confirmation",
+        "subtitle2": "Es-tu sûr ? Il n'y a pas de retour possible.",
+        "confirm": "Supprimer définitivement",
+        "done": "Compte supprimé"
+      },
+      "password": {
+        "title": "Changer le mot de passe",
+        "new": "Nouveau mot de passe",
+        "confirm": "Confirme le mot de passe",
+        "mismatch": "Les mots de passe ne correspondent pas",
+        "submit": "Mettre à jour",
+        "success": "Mot de passe mis à jour"
+      }
+    },
+    "profile": {
+      "title": "Mon profil",
+      "displayName": "Pseudo",
+      "photo": "Photo de profil",
+      "changePhoto": "Changer",
+      "answers": "Mes réponses",
+      "saved": "Profil enregistré"
+    },
+    "appearance": {
+      "title": "Apparence",
+      "team": "Équipe supportée",
+      "darkMode": "Mode sombre",
+      "darkModeSoon": "Bientôt",
+      "teamSaved": "Thème appliqué"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "push": "Notifications push",
+      "email": "Emails",
+      "trainingReminders": "Rappels d'entraînement",
+      "messages": "Messages",
+      "bookings": "Réservations"
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "visibility": "Visibilité du profil",
+      "visibilityOptions": {
+        "public": "Public",
+        "friends": "Amis",
+        "private": "Privé"
+      },
+      "locationVisible": "Position visible",
+      "export": "Exporter mes données",
+      "exportSubtitle": "Copie de tes données au format JSON",
+      "exportDone": "Export prêt (JSON)",
+      "deleteData": "Supprimer mes données (RGPD)"
+    },
+    "language": {
+      "title": "Langue",
+      "fr": "Français",
+      "en": "English"
+    },
+    "help": {
+      "title": "Aide & support",
+      "faq": "FAQ",
+      "contact": "Nous contacter",
+      "bug": "Signaler un bug",
+      "faqItems": [
+        {
+          "q": "L'app est-elle gratuite ?",
+          "a": "Oui. Les fonctionnalités arrivent progressivement."
+        },
+        {
+          "q": "Comment changer mon équipe de cœur ?",
+          "a": "Paramètres > Apparence > Équipe supportée. Le thème change instantanément."
+        },
+        {
+          "q": "Puis-je utiliser l'app sans compte ?",
+          "a": "Oui, en mode visiteur. Un compte débloquera les fonctionnalités sociales."
+        }
+      ]
+    },
+    "about": {
+      "title": "À propos",
+      "version": "Version",
+      "terms": "Conditions générales d'utilisation",
+      "privacyPolicy": "Politique de confidentialité",
+      "licenses": "Licences open source",
+      "debugUnlocked": "Écran de debug thème",
+      "tapsLeft": "Encore {{count}} taps"
+    },
+    "debug": {
+      "title": "Debug thème",
+      "tokens": "Tokens du thème courant",
+      "meta": "Métadonnées",
+      "gallery": "Galerie des thèmes",
+      "galleryStart": "Lancer la galerie",
+      "galleryStop": "Arrêter la galerie",
+      "preview": "Aperçu des composants",
+      "teamsCount": "{{count}} équipes · saison {{season}} · v{{version}}"
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Conditions générales d'utilisation"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité"
+    },
+    "licenses": {
+      "title": "Licences open source"
+    },
+    "placeholder": "Document à compléter avant la mise en production."
+  },
+  "toasts": {
+    "saved": "Enregistré",
+    "themeApplied": "Thème {{team}} appliqué",
+    "loggedOut": "À bientôt 👋"
+  }
+}
