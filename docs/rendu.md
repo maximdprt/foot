@@ -6,6 +6,13 @@ régénérables par `npm run screenshots`.
 > Format 390 × 844 (iPhone), densité 2 : Chrome est piloté par le protocole
 > DevTools, qui accepte n'importe quelle taille d'émulation.
 
+Les captures des onglets sont prises avec un **compte de démonstration** ayant
+une ville : sans elle, Matchs, Réservation et Social ne montreraient que leur
+état vide. Aucun historique personnel n'est fabriqué — les statistiques et les
+badges sont donc à zéro, exactement comme pour un nouveau membre. Les matchs
+ouverts, les joueurs alentour et les créneaux, eux, sont générés par l'app à
+partir de la ville.
+
 ## Ce qu'il faut vérifier
 
 - le fond est **blanc partout** (~75 % de la surface) ;
@@ -50,6 +57,16 @@ pour atteindre 4,65:1 sur blanc.
 La capture « Démarrage » est prise volontairement **pendant** l'animation, à
 900 ms : on y voit le logo en cours de tracé, le nom qui arrive et le ballon en
 l'air. Les autres sont prises une fois l'écran posé.
+
+## Fonctionnalités des onglets
+
+| Matchs | Détail d'un match | Organiser un match | Programme | Séance en cours |
+|---|---|---|---|---|
+| ![Matchs](screenshots/matchs-liste.png) | ![Détail](screenshots/matchs-detail.png) | ![Création](screenshots/matchs-creation.png) | ![Programme](screenshots/entrainement-programme.png) | ![Séance](screenshots/entrainement-seance.png) |
+
+La capture « Séance en cours » est prise pendant l'exercice : le minuteur
+circulaire tourne, l'exercice suivant est annoncé. Détail dans
+[`docs/features.md`](features.md).
 
 ## Autres écrans
 

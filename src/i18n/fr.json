@@ -8,8 +8,6 @@
     "save": "Enregistrer",
     "close": "Fermer",
     "search": "Rechercher",
-    "soon": "Bientôt",
-    "comingSoon": "Bientôt disponible",
     "loading": "Chargement…",
     "ok": "OK",
     "edit": "Modifier",
@@ -19,7 +17,17 @@
     "none": "Aucune",
     "optional": "Facultatif",
     "demoMode": "Mode démo local : Supabase n'est pas configuré, les données restent sur cet appareil.",
-    "error": "Une erreur est survenue. Réessaie."
+    "error": "Une erreur est survenue. Réessaie.",
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain",
+    "seeAll": "Tout voir",
+    "free": "Gratuit",
+    "add": "Ajouter",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "share": "Partager",
+    "min": "min",
+    "signInRequired": "Connecte-toi pour continuer"
   },
   "tabs": {
     "home": "Home",
@@ -27,9 +35,6 @@
     "booking": "Réservation",
     "social": "Social",
     "profile": "Profil"
-  },
-  "emptyState": {
-    "subtitle": "Bientôt disponible"
   },
   "home": {
     "title": "Home",
@@ -49,7 +54,22 @@
       "sessions": "Séances",
       "friends": "Amis",
       "pitches": "Terrains"
-    }
+    },
+    "nextMatch": "Ton prochain match",
+    "noMatchTitle": "Aucun match prévu",
+    "noMatchSubtitle": "Rejoins un match ouvert près de chez toi, ou organise le tien.",
+    "findMatch": "Rejoindre",
+    "createMatch": "Organiser",
+    "todaySession": "Ta séance du jour",
+    "startSession": "Commencer",
+    "streak": {
+      "none": "Lance ta première séance",
+      "one": "1 jour d'affilée",
+      "many": "{{count}} jours d'affilée"
+    },
+    "activityTitle": "Ce que font tes amis",
+    "activityEmpty": "Ajoute des amis pour suivre leur activité.",
+    "statsTitle": "Ton mois"
   },
   "training": {
     "title": "Entraînement",
@@ -58,6 +78,147 @@
       "programs": "Programmes",
       "drills": "Exercices",
       "history": "Historique"
+    },
+    "programs": "Programmes",
+    "history": "Historique",
+    "historyEmpty": "Aucune séance terminée pour l'instant.",
+    "historyEmptyHint": "Tes séances terminées s'afficheront ici.",
+    "notFound": "Programme introuvable",
+    "notFoundHint": "Ce programme n'existe plus. Reviens au catalogue.",
+    "sessionsCount": {
+      "one": "1 séance",
+      "many": "{{count}} séances"
+    },
+    "exercisesCount": {
+      "one": "1 exercice",
+      "many": "{{count}} exercices"
+    },
+    "intensity": "Intensité",
+    "intensityLevels": {
+      "1": "Légère",
+      "2": "Modérée",
+      "3": "Soutenue"
+    },
+    "gear": {
+      "none": "Sans matériel",
+      "ball": "Un ballon",
+      "cones": "Ballon et plots",
+      "wall": "Ballon et un mur"
+    },
+    "categories": {
+      "technique": "Technique",
+      "physical": "Physique",
+      "shooting": "Frappe",
+      "defense": "Défense",
+      "goalkeeper": "Gardien"
+    },
+    "start": "Commencer la séance",
+    "player": {
+      "getReady": "Prépare-toi",
+      "work": "En action",
+      "rest": "Récupération",
+      "next": "Ensuite",
+      "skip": "Passer",
+      "pause": "Pause",
+      "resume": "Reprendre",
+      "quit": "Quitter",
+      "quitTitle": "Quitter la séance ?",
+      "quitSubtitle": "Ta progression sera enregistrée telle quelle.",
+      "exerciseOf": "Exercice {{current}} sur {{total}}",
+      "doneTitle": "Séance terminée",
+      "doneSubtitle": "{{count}} exercices, {{duration}} d'effort.",
+      "doneCta": "Terminer",
+      "saved": "Séance enregistrée"
+    },
+    "catalogue": {
+      "exercises": {
+        "juggling": {
+          "name": "Jonglages",
+          "description": "Enchaîne les touches sans laisser tomber le ballon. Alterne les deux pieds."
+        },
+        "wall_passes": {
+          "name": "Passes au mur",
+          "description": "Passes courtes contre un mur, une touche à chaque fois."
+        },
+        "cone_dribble": {
+          "name": "Slalom entre plots",
+          "description": "Conduite de balle serrée, plots espacés d'un pas."
+        },
+        "first_touch": {
+          "name": "Contrôle orienté",
+          "description": "Renvoie au mur, contrôle et oriente dans la foulée."
+        },
+        "weak_foot": {
+          "name": "Pied faible",
+          "description": "Même exercice, uniquement du mauvais pied. C'est là que ça progresse."
+        },
+        "ladder_steps": {
+          "name": "Appuis rapides",
+          "description": "Pas serrés et rapides sur place, buste droit."
+        },
+        "sprint_intervals": {
+          "name": "Sprints fractionnés",
+          "description": "Sprint court à fond, puis retour au calme en marchant."
+        },
+        "core_plank": {
+          "name": "Gainage",
+          "description": "Planche sur les avant-bras, bassin aligné, respiration régulière."
+        },
+        "jump_squats": {
+          "name": "Squats sautés",
+          "description": "Descends en squat, remonte en explosant. Réception souple."
+        },
+        "mobility": {
+          "name": "Échauffement mobilité",
+          "description": "Chevilles, hanches, épaules. À faire avant chaque séance."
+        },
+        "shooting_placement": {
+          "name": "Frappes placées",
+          "description": "Vise une cible précise plutôt que la puissance."
+        },
+        "volley_control": {
+          "name": "Reprises de volée",
+          "description": "Envoie en cloche contre le mur et reprends avant le rebond."
+        },
+        "defensive_slides": {
+          "name": "Déplacements défensifs",
+          "description": "Pas chassés latéraux entre deux plots, sans croiser les jambes."
+        },
+        "one_v_one_stance": {
+          "name": "Position de duel",
+          "description": "Travaille ta posture d'appui : de profil, genoux fléchis."
+        },
+        "gk_reflexes": {
+          "name": "Réflexes",
+          "description": "Renvois au mur à courte distance, réaction au rebond."
+        },
+        "gk_footwork": {
+          "name": "Jeu de jambes",
+          "description": "Déplacements courts entre les plots, toujours face au jeu."
+        }
+      },
+      "programs": {
+        "quick_touch": {
+          "name": "Touche rapide",
+          "description": "Une séance courte pour garder le pied, même les jours chargés."
+        },
+        "first_steps": {
+          "name": "Premiers pas",
+          "description": "Les bases de la conduite et du contrôle, sans se mettre dans le rouge."
+        },
+        "sharp_finish": {
+          "name": "Finition tranchante",
+          "description": "Conduite, frappe et explosivité pour être décisif devant le but."
+        },
+        "engine": {
+          "name": "Moteur",
+          "description": "Séance physique : appuis, sprints et gainage pour tenir 90 minutes."
+        },
+        "keeper_drills": {
+          "name": "Spécial gardien",
+          "description": "Jeu de jambes, réflexes et déplacements pour les portiers."
+        }
+      }
     }
   },
   "booking": {
@@ -68,7 +229,29 @@
       "futsal": "Futsal",
       "pitches": "Terrains",
       "bookings": "Mes réservations"
-    }
+    },
+    "venuesTitle": "Terrains près de toi",
+    "myBookings": "Mes réservations",
+    "noBookings": "Aucune réservation.",
+    "cityMissing": "Renseigne ta ville pour voir les terrains disponibles.",
+    "cityMissingHint": "Les terrains proposés dépendent de ta ville.",
+    "setCity": "Renseigner ma ville",
+    "slots": "Créneaux",
+    "noSlots": "Plus de créneau libre ce jour-là.",
+    "book": "Réserver",
+    "booked": "Créneau réservé",
+    "cancelBooking": "Annuler",
+    "cancelled": "Réservation annulée",
+    "perSlot": "le créneau",
+    "covered": "Couvert",
+    "outdoor": "Plein air",
+    "venues": {
+      "five_indoor": "Five indoor",
+      "futsal": "Futsal",
+      "club_pitch": "Terrain de club",
+      "city_stadium": "City stade"
+    },
+    "demoNotice": "Terrains de démonstration : il n'existe pas d'annuaire ouvert des terrains amateurs."
   },
   "social": {
     "title": "Social",
@@ -78,6 +261,26 @@
       "teams": "Équipes",
       "messages": "Messages",
       "events": "Événements"
+    },
+    "friends": "Amis",
+    "requests": "Demandes",
+    "suggestions": "Joueurs près de toi",
+    "activity": "Activité",
+    "noFriends": "Tu n'as pas encore d'amis ici.",
+    "noSuggestions": "Aucun joueur à proposer pour l'instant.",
+    "noActivity": "Rien à afficher pour l'instant.",
+    "pending": "Demande envoyée",
+    "remove": "Retirer",
+    "removed": "Relation supprimée",
+    "requestSent": "Demande envoyée",
+    "accepted": "Vous êtes amis",
+    "events": {
+      "match_created": "{{name}} organise un match",
+      "match_joined": "{{name}} a rejoint un match",
+      "session_completed": "{{name}} a terminé une séance",
+      "booking_created": "{{name}} a réservé un terrain",
+      "friend_added": "{{name}} a un nouvel ami",
+      "badge_earned": "{{name}} a décroché un badge"
     }
   },
   "profile": {
@@ -93,6 +296,73 @@
       "badges": "Badges",
       "history": "Historique",
       "team": "Mon équipe"
+    },
+    "statsTitle": "Statistiques",
+    "badgesTitle": "Badges",
+    "badgesEarned": "{{earned}} sur {{total}}",
+    "stats": {
+      "matchesPlayed": "Matchs joués",
+      "matchesUpcoming": "Matchs à venir",
+      "matchesOrganized": "Matchs organisés",
+      "sessionsCompleted": "Séances",
+      "trainingMinutes": "Entraînement",
+      "bookings": "Réservations",
+      "friends": "Amis",
+      "currentStreakDays": "Série en cours",
+      "bestStreakDays": "Meilleure série"
+    },
+    "badges": {
+      "locked": "À débloquer",
+      "items": {
+        "first_touch": {
+          "name": "Première séance",
+          "description": "Termine ta première séance d'entraînement."
+        },
+        "regular": {
+          "name": "Régularité",
+          "description": "Termine 10 séances."
+        },
+        "grinder": {
+          "name": "Persévérance",
+          "description": "Termine 30 séances."
+        },
+        "hour_club": {
+          "name": "Une heure au compteur",
+          "description": "Cumule 60 minutes d'entraînement."
+        },
+        "marathon": {
+          "name": "Marathon",
+          "description": "Cumule 10 heures d'entraînement."
+        },
+        "streak_three": {
+          "name": "Trois jours d'affilée",
+          "description": "Entraîne-toi trois jours de suite."
+        },
+        "streak_week": {
+          "name": "Semaine pleine",
+          "description": "Entraîne-toi sept jours de suite."
+        },
+        "first_match": {
+          "name": "Premier match",
+          "description": "Joue ton premier match."
+        },
+        "team_player": {
+          "name": "Pilier de l'équipe",
+          "description": "Joue 10 matchs."
+        },
+        "organizer": {
+          "name": "Organisation",
+          "description": "Organise 3 matchs."
+        },
+        "connected": {
+          "name": "Entourage",
+          "description": "Ajoute 3 amis."
+        },
+        "captain": {
+          "name": "Capitaine",
+          "description": "Ajoute 10 amis."
+        }
+      }
     }
   },
   "auth": {
@@ -420,5 +690,68 @@
     "saved": "Enregistré",
     "themeApplied": "Thème {{team}} appliqué",
     "loggedOut": "À bientôt 👋"
+  },
+  "matches": {
+    "title": "Matchs",
+    "tabs": {
+      "open": "À rejoindre",
+      "mine": "Mes matchs"
+    },
+    "emptyOpen": "Aucun match ouvert près de chez toi",
+    "emptyOpenHint": "Sois le premier à en organiser un.",
+    "emptyMine": "Tu n'es inscrit à aucun match",
+    "notFound": "Match introuvable",
+    "notFoundHint": "Il a peut-être été annulé, ou le lien n'est plus valide.",
+    "create": "Organiser un match",
+    "spotsLeft": {
+      "one": "1 place restante",
+      "many": "{{count}} places restantes"
+    },
+    "full": "Complet",
+    "cancelled": "Annulé",
+    "past": "Terminé",
+    "organizer": "Organisé par {{name}}",
+    "organizerYou": "Tu organises ce match",
+    "join": "Rejoindre",
+    "leave": "Quitter le match",
+    "cancelMatch": "Annuler le match",
+    "cancelConfirmTitle": "Annuler ce match ?",
+    "cancelConfirmSubtitle": "Les joueurs inscrits en seront informés. Cette action est définitive.",
+    "joined": "Tu es inscrit",
+    "participants": "Joueurs",
+    "notes": "Précisions",
+    "venue": "Lieu",
+    "when": "Quand",
+    "level": "Niveau",
+    "formats": {
+      "five": "Foot à 5",
+      "futsal": "Futsal",
+      "seven": "Foot à 7",
+      "eleven": "Foot à 11"
+    },
+    "levels": {
+      "all": "Tous niveaux",
+      "leisure": "Loisir",
+      "confirmed": "Confirmé",
+      "competition": "Compétition"
+    },
+    "new": {
+      "title": "Organiser un match",
+      "format": "Format",
+      "level": "Niveau attendu",
+      "day": "Jour",
+      "time": "Heure",
+      "duration": "Durée",
+      "venue": "Lieu",
+      "venuePlaceholder": "Nom du terrain",
+      "city": "Ville",
+      "cityPlaceholder": "Ta ville",
+      "players": "Nombre de joueurs",
+      "notes": "Précisions (facultatif)",
+      "notesPlaceholder": "Chasubles, niveau, parking…",
+      "submit": "Créer le match",
+      "created": "Match créé",
+      "cityMissing": "Renseigne ta ville pour organiser un match."
+    }
   }
 }

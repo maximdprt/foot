@@ -95,21 +95,66 @@ function asMember(teamId = 'paris-saint-germain') {
 afterEach(asGuest);
 
 describe('onglets', () => {
+  // Chaque onglet a maintenant un contenu propre : on vérifie qu'il s'affiche,
+  // et qu'aucune clé i18n ne fuit (« [missing "fr.x.y" translation] »).
   it.each([
-    ['Home', HomeScreen],
-    ['Entraînement', TrainingScreen],
-    ['Réservation', BookingScreen],
-    ['Social', SocialScreen],
-    ['Profil', ProfileScreen],
-  ])('rend l onglet %s en visiteur', (_name, Screen) => {
+    ['Home', HomeScreen, 'Ton prochain match'],
+    ['Entraînement', TrainingScreen, 'Programmes'],
+    // Sans ville renseignée, l'onglet Réservation invite d'abord à la saisir.
+    ['Réservation', BookingScreen, 'Renseigne ta ville'],
+    ['Social', SocialScreen, 'Amis'],
+    ['Profil', ProfileScreen, 'Statistiques'],
+  ])('rend l onglet %s en visiteur', (_name, Screen, marker) => {
     asGuest();
     const tree = render(<Screen />);
     const text = textOf(tree);
     expect(tree.toJSON()).toBeTruthy();
-    // « Bientôt disponible » vient de emptyState.subtitle : preuve que l'i18n est résolue.
-    expect(text).toContain('Bientôt disponible');
-    // Une clé non traduite ressortirait sous la forme « [missing "fr.x.y" translation] ».
+    expect(text).toContain(marker);
     expect(text).not.toMatch(/missing .* translation/);
+    act(() => tree.unmount());
+  });
+
+  it('propose de rejoindre ou d organiser quand aucun match n est prévu', () => {
+    asGuest();
+    const tree = render(<HomeScreen />);
+    const text = textOf(tree);
+    expect(text).toContain('Aucun match prévu');
+    expect(text).toContain('Rejoindre');
+    expect(text).toContain('Organiser');
+    act(() => tree.unmount());
+  });
+
+  it('met en avant une séance et son catalogue traduit', () => {
+    asGuest();
+    const tree = render(<TrainingScreen />);
+    const text = textOf(tree);
+    // Le catalogue passe par l'i18n : son nom prouve que les clés sont résolues.
+    expect(text).toContain('Touche rapide');
+    expect(text).toContain('Spécial gardien');
+    act(() => tree.unmount());
+  });
+
+  it('liste les terrains une fois la ville connue', () => {
+    asMember();
+    act(() => {
+      useProfileStore.setState({ draft: { displayName: 'Kylian', city: 'Rennes' } });
+    });
+    const tree = render(<BookingScreen />);
+    const text = textOf(tree);
+    expect(text).toContain('Terrains près de toi');
+    expect(text).toContain('Five indoor');
+    expect(text).toContain('City stade');
+    act(() => tree.unmount());
+  });
+
+  it('affiche les badges à débloquer sur le profil', () => {
+    asMember();
+    const tree = render(<ProfileScreen />);
+    const text = textOf(tree);
+    expect(text).toContain('Badges');
+    expect(text).toContain('Première séance');
+    // Aucun badge décroché au départ : le compteur le dit.
+    expect(text).toContain('0 sur 12');
     act(() => tree.unmount());
   });
 
@@ -188,15 +233,18 @@ describe('changement de langue', () => {
   it('bascule instantanément tout l écran en anglais', () => {
     asGuest();
     const fr = render(<TrainingScreen />);
-    expect(textOf(fr)).toContain('Bientôt disponible');
+    expect(textOf(fr)).toContain('Touche rapide');
     act(() => fr.unmount());
 
     act(() => {
       useSettingsStore.setState({ locale: 'en' });
     });
     const en = render(<TrainingScreen />);
-    expect(textOf(en)).toContain('Coming soon');
-    expect(textOf(en)).not.toContain('Bientôt disponible');
+    expect(textOf(en)).toContain('Programs');
+    expect(textOf(en)).toContain('Quick touch');
+    expect(textOf(en)).not.toContain('Touche rapide');
+    // Garde-fou : « Programmes » était resté tel quel dans la version anglaise.
+    expect(textOf(en)).not.toContain('Programmes');
     act(() => en.unmount());
   });
 });

@@ -134,9 +134,9 @@ function connect(url) {
 /**
  * Ouvre un navigateur piloté, prêt à capturer.
  *
- * `capture({ url, out, settle, fullPage })` charge la page, laisse tourner
- * `settle` millisecondes (le temps que les animations d'entrée se posent) puis
- * écrit le PNG.
+ * `capture({ url, settle, timeout })` charge la page, laisse tourner `settle`
+ * millisecondes (le temps que les animations d'entrée se posent) puis renvoie
+ * le PNG. `timeout` borne l'attente du chargement.
  */
 export async function openBrowser({ width = 390, height = 844, scale = 2, port = 9333 } = {}) {
   const { child, userDataDir, webSocketDebuggerUrl } = await launch(port);
@@ -179,8 +179,10 @@ export async function openBrowser({ width = 390, height = 844, scale = 2, port =
     clearMessages: () => {
       messages.length = 0;
     },
-    async capture({ url, settle = 2500 }) {
-      const loaded = browser.waitFor('Page.loadEventFired', sessionId);
+    // `timeout` : le serveur de développement sert un bundle non minifié de
+    // plus de 13 Mo à chaque route, ce qui dépasse parfois la valeur par défaut.
+    async capture({ url, settle = 2500, timeout }) {
+      const loaded = browser.waitFor('Page.loadEventFired', sessionId, timeout);
       await browser.send('Page.navigate', { url }, sessionId);
       await loaded;
       // L'app démarre par un écran animé : on lui laisse le temps de s'effacer.
@@ -191,6 +193,19 @@ export async function openBrowser({ width = 390, height = 844, scale = 2, port =
         sessionId,
       );
       return Buffer.from(data, 'base64');
+    },
+    /**
+     * Évalue une expression dans la page et renvoie sa valeur.
+     * Utile pour naviguer côté client : avec le serveur de développement, une
+     * navigation complète retélécharge tout le bundle à chaque route.
+     */
+    async evaluate(expression) {
+      const { result } = await browser.send(
+        'Runtime.evaluate',
+        { expression, awaitPromise: true, returnByValue: true },
+        sessionId,
+      );
+      return result?.value;
     },
     async close() {
       try {

@@ -3,7 +3,6 @@ import React from 'react';
 import { Animated, View, type StyleProp, type ViewStyle } from 'react-native';
 
 import { useEntrance, usePulse } from '@/lib/motion';
-import { useTranslation } from '@/i18n';
 import { useTheme } from '@/theme/ThemeProvider';
 
 import { Text } from './Text';
@@ -19,14 +18,13 @@ interface EmptyStateProps {
 
 /**
  * État vide : grande icône ligne dans un cercle teinté à 10 % de la primaire,
- * titre, « Bientôt disponible ».
+ * titre, et un sous-titre seulement quand l'écran a quelque chose à ajouter.
  *
  * Le cercle respire et une onde s'en échappe : l'écran vide reste vivant sans
  * jamais attirer l'œil plus que le contenu réel.
  */
 export function EmptyState({ icon: Icon, title, subtitle, animate = true, style }: EmptyStateProps) {
   const theme = useTheme();
-  const { t } = useTranslation();
   const entrance = useEntrance({ enabled: animate, scaleFrom: 0.94, duration: 520 });
   const pulse = usePulse(3200);
 
@@ -71,9 +69,11 @@ export function EmptyState({ icon: Icon, title, subtitle, animate = true, style 
       <Text variant="h3" align="center">
         {title}
       </Text>
-      <Text variant="body" color="textSecondary" align="center" style={{ marginTop: theme.spacing.xs }}>
-        {subtitle ?? t('emptyState.subtitle')}
-      </Text>
+      {subtitle ? (
+        <Text variant="body" color="textSecondary" align="center" style={{ marginTop: theme.spacing.xs }}>
+          {subtitle}
+        </Text>
+      ) : null}
     </Animated.View>
   );
 }

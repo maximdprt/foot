@@ -15,7 +15,8 @@
     "test": "jest",
     "teams:build": "node scripts/scrape-teams.mjs",
     "screenshots": "node scripts/screenshots.mjs",
-    "logo:build": "node scripts/build-logo.mjs"
+    "logo:build": "node scripts/build-logo.mjs",
+    "check:console": "node scripts/console-sweep.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.4.2",

@@ -70,6 +70,26 @@ quand une information manque, et de le signaler. Voici la liste complète.
 | Animations réduites | Toutes les boucles décoratives s'arrêtent, les entrées deviennent instantanées | Exigence d'accessibilité. Vérifié par les tests : tous les composants animés se rendent encore dans ce mode. |
 | Intensité du décor | Pelouse et tracés entre 2,5 % et 3,5 % d'opacité | La règle « ~75 % de blanc » reste prioritaire sur le décor : la trame doit se deviner, pas se regarder. |
 
+## Fonctionnalités des onglets
+
+Le cahier des charges interdisait les fonctionnalités métier ; le périmètre a été ouvert ensuite.
+
+| Sujet | Décision | Pourquoi |
+|---|---|---|
+| Catalogues (exercices, programmes, terrains, badges) | **Embarqués dans l'app**, pas en base | Identiques pour tout le monde, doivent marcher hors ligne, et n'ont donc rien à faire dans une table. Seules les données propres à l'utilisateur passent par le backend. |
+| Terrains | **Archétypes génériques** déclinés dans la ville (« Five indoor · Rennes ») plutôt que des noms d'établissements | Aucun annuaire ouvert des terrains amateurs n'existe en France. Inventer des noms donnerait l'illusion de vraies adresses. Brancher un vrai annuaire ne touchera qu'un fichier. |
+| Créneaux | Générés de façon **déterministe** depuis la ville et la date | Les disponibilités ne changent pas d'une ouverture à l'autre, et aucun serveur n'est nécessaire pour essayer le parcours. |
+| Statistiques et badges | **Calculés** à la volée, jamais stockés | Une donnée dérivée qu'on enregistre finit toujours par diverger de la réalité. |
+| Série de jours | Rompue seulement après **deux** jours sans séance | S'être entraîné hier mais pas encore aujourd'hui ne doit pas remettre le compteur à zéro : la série ne doit pas punir une matinée. |
+| Séance interrompue | Enregistrée quand même | Le temps passé compte ; ne rien garder découragerait de reprendre. |
+| Profils des autres joueurs | Vue `public_profiles` (nom, avatar, équipe, ville) au lieu de `user_profiles` | Lire le profil complet pour afficher un nom exposerait la position GPS, le club et les objectifs. La vue applique en plus les réglages de confidentialité. |
+| Policies RLS | Fonctions `security definer` (`are_friends`, `can_see_match`) | Sans elles, la policy de `matches` interrogerait `match_participants`, dont la policy interrogerait `matches` : récursion. |
+| Profils de démonstration | Prénoms fictifs, semés localement, uniquement sans Supabase | Sans eux, les cinq onglets sont vides et rien n'est essayable. Ils ne quittent jamais l'appareil. |
+| Jour affiché à l'ouverture de Réservation | Le **premier jour où il reste un créneau**, pas forcément aujourd'hui | Passé la fermeture des terrains, aujourd'hui n'a plus rien à proposer : l'écran s'ouvrirait sur un cul-de-sac. Un jour choisi explicitement est conservé. |
+| Chargement des données | Un **jeton** invalide la réponse d'un chargement dépassé | La session est restaurée juste après le premier rendu : un chargement « visiteur » est déjà parti quand le compte arrive. Sans jeton, sa réponse écrasait celle du compte, et l'app restait sans amis ni séances jusqu'au prochain « tirer pour rafraîchir ». |
+| État vide | Sous-titre **facultatif**, plus de « Bientôt disponible » par défaut | Ce défaut datait des onglets encore vides. Une fois les écrans remplis, il promettait une fonctionnalité à venir là où il n'y avait qu'une liste vide. |
+| Sélecteur de date | Chips tapables plutôt que le sélecteur natif | Le sélecteur natif diffère trop d'une plateforme à l'autre et alourdit un parcours qui doit tenir en quelques secondes. |
+
 ## Compte et conformité
 
 | Sujet | Décision | Pourquoi |

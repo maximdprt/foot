@@ -123,6 +123,8 @@ function AppShell({ onLayout, ready, onBootFinished }: AppShellProps) {
         <Stack.Screen name="(auth)" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
         <Stack.Screen name="(onboarding)" options={{ gestureEnabled: false }} />
         <Stack.Screen name="settings" />
+        <Stack.Screen name="matches" />
+        <Stack.Screen name="training" />
       </Stack>
       <ToastHost />
       <AuthGateSheet />

@@ -7,7 +7,7 @@
  * filigrane et les tracés du terrain à l'intérieur.
  */
 import { router, type Href } from 'expo-router';
-import { Activity, Award, RotateCcw, Settings, Shield, Trophy } from 'lucide-react-native';
+import { Settings } from 'lucide-react-native';
 import React from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
@@ -17,22 +17,22 @@ import {
   Avatar,
   Button,
   Card,
-  EmptyState,
   Gradient,
   IconButton,
   Screen,
   ScreenHeader,
+  StatTile,
   TeamDot,
   Text,
-  Tile,
-  TileGrid,
 } from '@/components/ui';
+import { useRefresh, usePlayerStats } from '@/features/data/useData';
+import { BadgeGrid } from '@/features/profile/BadgeGrid';
+import { sortedBadges } from '@/features/profile/stats';
 import { useTranslation } from '@/i18n';
 import { useEntrance } from '@/lib/motion';
 import { useProfileStore } from '@/store/profileStore';
 import { selectIsAuthenticated, useSessionStore } from '@/store/sessionStore';
 import { useThemeStore } from '@/store/themeStore';
-import { useUIStore } from '@/store/uiStore';
 import { getTeam, getTeamDisplayName } from '@/theme/teams';
 import { useTheme } from '@/theme/ThemeProvider';
 
@@ -43,19 +43,21 @@ export default function ProfileScreen() {
   const profile = useProfileStore((s) => s.profile);
   const draft = useProfileStore((s) => s.draft);
   const favoriteTeamId = useThemeStore((s) => s.favoriteTeamId);
-  const showAuthGate = useUIStore((s) => s.showAuthGate);
+  const { refreshing, refresh } = useRefresh();
+  const stats = usePlayerStats();
+  const badges = sortedBadges(stats);
+  const earned = badges.filter((badge) => badge.earned).length;
 
   const bannerIn = useEntrance({ duration: 520, scaleFrom: 0.97 });
   const identityIn = useEntrance({ delay: 140 });
-  const tilesIn = useEntrance({ delay: 260 });
+  const statsIn = useEntrance({ delay: 260 });
 
   const team = getTeam(favoriteTeamId);
   const displayName = profile?.displayName ?? draft.displayName ?? null;
   const avatarUrl = profile?.avatarUrl ?? draft.avatarUrl ?? null;
-  const iconColor = theme.colors.onPrimary;
 
   return (
-    <Screen>
+    <Screen onRefresh={refresh} refreshing={refreshing}>
       <ScreenHeader
         title={t('profile.title')}
         right={
@@ -123,41 +125,41 @@ export default function ProfileScreen() {
         </Card>
       )}
 
-      <EmptyState icon={Activity} title={t('profile.emptyTitle')} />
+      <Animated.View style={[{ marginTop: theme.sizes.sectionGap }, statsIn]}>
+        <Text variant="h3" style={{ marginBottom: theme.spacing.md }}>
+          {t('profile.statsTitle')}
+        </Text>
 
-      <Animated.View style={[{ marginTop: theme.sizes.sectionGap }, tilesIn]}>
-        <TileGrid>
-          {[
-            <Tile
-              key="stats"
-              title={t('profile.tiles.stats')}
-              caption={t('common.soon')}
-              icon={<Trophy size={24} color={iconColor} strokeWidth={2} />}
-              onPress={showAuthGate}
-            />,
-            <Tile
-              key="badges"
-              title={t('profile.tiles.badges')}
-              caption={t('common.soon')}
-              icon={<Award size={24} color={iconColor} strokeWidth={2} />}
-              onPress={showAuthGate}
-            />,
-            <Tile
-              key="history"
-              title={t('profile.tiles.history')}
-              caption={t('common.soon')}
-              icon={<RotateCcw size={24} color={iconColor} strokeWidth={2} />}
-              onPress={showAuthGate}
-            />,
-            <Tile
-              key="team"
-              title={t('profile.tiles.team')}
-              caption={t('common.soon')}
-              icon={<Shield size={24} color={iconColor} strokeWidth={2} />}
-              onPress={showAuthGate}
-            />,
-          ]}
-        </TileGrid>
+        <View style={{ flexDirection: 'row', gap: theme.spacing.md }}>
+          <StatTile label={t('profile.stats.matchesPlayed')} value={stats.matchesPlayed} highlight />
+          <StatTile label={t('profile.stats.sessionsCompleted')} value={stats.sessionsCompleted} />
+          <StatTile label={t('profile.stats.friends')} value={stats.friends} />
+        </View>
+        <View style={{ flexDirection: 'row', gap: theme.spacing.md, marginTop: theme.spacing.md }}>
+          <StatTile
+            label={t('profile.stats.trainingMinutes')}
+            value={stats.trainingMinutes}
+            suffix={` ${t('common.min')}`}
+          />
+          <StatTile label={t('profile.stats.bestStreakDays')} value={stats.bestStreakDays} />
+          <StatTile label={t('profile.stats.bookings')} value={stats.bookings} />
+        </View>
+
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'baseline',
+            justifyContent: 'space-between',
+            marginTop: theme.sizes.sectionGap,
+            marginBottom: theme.spacing.md,
+          }}
+        >
+          <Text variant="h3">{t('profile.badgesTitle')}</Text>
+          <Text variant="caption" color="textSecondary">
+            {t('profile.badgesEarned', { earned, total: badges.length })}
+          </Text>
+        </View>
+        <BadgeGrid badges={badges} />
       </Animated.View>
     </Screen>
   );

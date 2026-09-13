@@ -16,6 +16,7 @@ export * from './SelectableCard';
 export * from './Sheet';
 export * from './TeamCrest';
 export * from './TeamDot';
+export * from './StatTile';
 export * from './Text';
 export * from './Tile';
 export * from './ToastHost';

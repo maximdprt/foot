@@ -5,8 +5,9 @@ Ce dépôt contient la **fondation** : parcours d'entrée (visiteur, compte, onb
 navigation à 5 onglets, page Paramètres complète et système de thème dynamique
 piloté par l'équipe que supporte l'utilisateur.
 
-> Les fonctionnalités métier des onglets ne sont **pas** implémentées : les écrans
-> montrent la direction artistique avec les composants du design system.
+Les cinq onglets sont désormais fonctionnels : organiser et rejoindre des matchs,
+suivre des séances d'entraînement minutées, réserver un créneau, se faire des amis,
+et suivre ses statistiques et ses badges. Voir [`docs/features.md`](docs/features.md).
 
 ---
 
@@ -29,11 +30,16 @@ Autres scripts :
 npm run ios / npm run android / npm run web   # cibler une plateforme
 npm run typecheck                             # tsc --noEmit
 npm run lint                                  # ESLint (config Expo)
-npm test                                      # Jest — 65 tests, 6 suites
+npm test                                      # Jest — 113 tests, 9 suites
 npm run teams:build                           # régénère src/theme/teams.json
 npm run logo:build                            # régénère les icônes + le tracé du logo
 npm run screenshots                           # régénère docs/screenshots/ (Chrome requis)
+npm run check:console                         # parcourt les 37 routes, remonte les avertissements
 ```
+
+`check:console` demande un `npm run dev` en cours. Il relève ce qu'une capture
+ne montre pas — props DOM invalides, API dépréciées, requêtes en échec — et
+vérifie que chaque route a bien été rendue, pas seulement chargée.
 
 Ce que couvrent les tests (`src/__tests__/`) :
 
@@ -46,6 +52,8 @@ Ce que couvrent les tests (`src/__tests__/`) :
 | `designSystem` | rendu réel des composants avec 3 thèmes, couleurs issues du thème |
 | `screens` | rendu réel des 5 onglets, de l'auth, d'une question et des Paramètres (visiteur et connecté), bascule de langue |
 | `motion` | intégrité du tracé du logo, rendu de tous les composants animés, mode « animations réduites » |
+| `features` | règles de participation aux matchs, catalogue d'entraînement, créneaux, séries, statistiques et badges |
+| `dataService` | chargement des collections, et la réponse d'un chargement dépassé qui ne doit rien écraser |
 
 ---
 
@@ -63,9 +71,11 @@ démo local prend le relais : aucune erreur, aucun écran bloqué.
 
 ### Mise en place de Supabase
 
-1. Exécuter `supabase/schema.sql` (éditeur SQL du projet, ou `supabase db push`).
-   Il crée les types énumérés, `user_profiles`, `user_settings`, `teams`, les
-   déclencheurs, **les policies RLS** et le bucket Storage `avatars`.
+1. Exécuter `supabase/schema.sql` puis `supabase/features.sql` (éditeur SQL du
+   projet, ou `supabase db push`). Le premier crée `user_profiles`,
+   `user_settings`, `teams`, les déclencheurs, **les policies RLS** et le bucket
+   Storage `avatars` ; le second les six tables métier (matchs, séances,
+   réservations, relations, activité) et la vue `public_profiles`.
 2. Activer les fournisseurs **Email**, **Google** et **Apple** dans
    *Authentication > Providers*, avec l'URL de retour `pelouse://auth-callback`
    (et l'origine du site pour le web).
@@ -93,12 +103,13 @@ src/components/motion/    Football3D, PitchBackground, TiltCard, ConfettiBurst, 
 src/components/navigation/ Icône d'onglet animée
 src/components/           TeamPicker, AuthGateSheet, ThemeApplyOverlay
 src/theme/                tokens.ts, buildTheme.ts, ThemeProvider.tsx, teams.json
-src/features/             auth/, onboarding/, profile/, settings/
+src/features/             auth/, onboarding/, profile/, settings/,
+                          matches/, training/, booking/, social/, data/
 src/store/                Zustand : session, profil, thème, réglages, UI
 src/lib/                  client Supabase, backend (Supabase ou démo), storage, contraste, motion
 src/i18n/                 fr.json (défaut), en.json
 assets/brand/             logo source (une seule image, tout en dérive)
-scripts/                  scrape-teams.mjs, build-logo.mjs, screenshots.mjs + données curées
+scripts/                  scrape-teams.mjs, build-logo.mjs, screenshots.mjs, console-sweep.mjs
 supabase/                 schema.sql + Edge Function delete-account
 ```
 
@@ -221,6 +232,7 @@ ils échoueront tant que la liste n'aura pas été mise à jour.
 
 ## Documentation
 
+- [`docs/features.md`](docs/features.md) — ce que fait chaque onglet, et comment
 - [`docs/screens.md`](docs/screens.md) — plan écran par écran et inventaire des composants
 - [`docs/motion.md`](docs/motion.md) — marque, système d'animation, composants 3D
 - [`docs/rendu.md`](docs/rendu.md) — captures des 5 onglets avec trois thèmes (`npm run screenshots`)

@@ -13,7 +13,13 @@ function ToastItem({ toast }: { toast: ToastModel }) {
   const [opacity] = useState(() => new Animated.Value(0));
 
   useEffect(() => {
-    Animated.timing(opacity, { toValue: 1, duration: theme.motion.fast, useNativeDriver: true }).start();
+    const animation = Animated.timing(opacity, {
+      toValue: 1,
+      duration: theme.motion.fast,
+      useNativeDriver: true,
+    });
+    animation.start();
+    return () => animation.stop();
   }, [opacity, theme.motion.fast]);
 
   const backgroundColor =

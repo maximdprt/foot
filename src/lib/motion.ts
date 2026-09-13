@@ -235,6 +235,9 @@ export function usePressScale(depth = 0.04): PressScale {
   const reduced = useReducedMotion();
   const [value] = useState(() => new Animated.Value(1));
 
+  // Un appui suivi d'une navigation laisserait sinon le ressort tourner dans le vide.
+  useEffect(() => () => value.stopAnimation(), [value]);
+
   const animateTo = (toValue: number, config: (typeof springs)[keyof typeof springs]) => {
     if (reduced) {
       value.setValue(1);

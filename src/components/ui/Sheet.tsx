@@ -52,24 +52,26 @@ export function Sheet({
   }
 
   useEffect(() => {
-    if (visible) {
-      Animated.parallel([
-        Animated.timing(translateY, { toValue: 0, duration: theme.motion.normal, useNativeDriver: true }),
-        Animated.timing(backdrop, { toValue: 1, duration: theme.motion.fast, useNativeDriver: true }),
-      ]).start();
-      return;
-    }
-    Animated.parallel([
-      Animated.timing(translateY, {
-        toValue: screenHeight,
-        duration: theme.motion.fast,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backdrop, { toValue: 0, duration: theme.motion.fast, useNativeDriver: true }),
-      // Démontage seulement à la fin de l'animation de sortie.
-    ]).start(({ finished }) => {
-      if (finished) setMounted(false);
+    const animation = visible
+      ? Animated.parallel([
+          Animated.timing(translateY, { toValue: 0, duration: theme.motion.normal, useNativeDriver: true }),
+          Animated.timing(backdrop, { toValue: 1, duration: theme.motion.fast, useNativeDriver: true }),
+        ])
+      : Animated.parallel([
+          Animated.timing(translateY, {
+            toValue: screenHeight,
+            duration: theme.motion.fast,
+            useNativeDriver: true,
+          }),
+          Animated.timing(backdrop, { toValue: 0, duration: theme.motion.fast, useNativeDriver: true }),
+        ]);
+
+    // Démontage seulement à la fin de l'animation de sortie.
+    animation.start(({ finished }) => {
+      if (finished && !visible) setMounted(false);
     });
+    // Sans cet arrêt, l'animation continue après le démontage du composant.
+    return () => animation.stop();
   }, [visible, backdrop, screenHeight, theme.motion.fast, theme.motion.normal, translateY]);
 
   if (!mounted) return null;

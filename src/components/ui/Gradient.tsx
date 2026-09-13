@@ -28,9 +28,15 @@ export function Gradient({ colors, direction = 'diagonal', style, children }: Gr
         : { x1: '0', y1: '0', x2: '1', y2: '1' };
 
   return (
-    <View style={style}>
+    // Décor pur : l'accessibilité se déclare ici, pas sur le SVG — `react-native-svg`
+    // transmet au DOM les props qu'il ne connaît pas, et React s'en plaint.
+    <View
+      style={style}
+      accessibilityElementsHidden
+      importantForAccessibility="no-hide-descendants"
+    >
       {/* `width`/`height` explicites : sans eux le SVG retombe sur 300×150 sur le web. */}
-      <Svg width="100%" height="100%" style={StyleSheet.absoluteFill} accessibilityElementsHidden>
+      <Svg width="100%" height="100%" style={StyleSheet.absoluteFill}>
         <Defs>
           <LinearGradient id="grad" {...coords}>
             <Stop offset="0" stopColor={from} />

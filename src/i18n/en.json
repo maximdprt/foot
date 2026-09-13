@@ -8,8 +8,6 @@
     "save": "Save",
     "close": "Close",
     "search": "Search",
-    "soon": "Soon",
-    "comingSoon": "Coming soon",
     "loading": "Loading…",
     "ok": "OK",
     "edit": "Edit",
@@ -19,7 +17,17 @@
     "none": "None",
     "optional": "Optional",
     "demoMode": "Local demo mode: Supabase is not configured, data stays on this device.",
-    "error": "Something went wrong. Please try again."
+    "error": "Something went wrong. Please try again.",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "seeAll": "See all",
+    "free": "Free",
+    "add": "Add",
+    "accept": "Accept",
+    "decline": "Decline",
+    "share": "Share",
+    "min": "min",
+    "signInRequired": "Sign in to continue"
   },
   "tabs": {
     "home": "Home",
@@ -27,9 +35,6 @@
     "booking": "Booking",
     "social": "Social",
     "profile": "Profile"
-  },
-  "emptyState": {
-    "subtitle": "Coming soon"
   },
   "home": {
     "title": "Home",
@@ -49,7 +54,22 @@
       "sessions": "Sessions",
       "friends": "Friends",
       "pitches": "Pitches"
-    }
+    },
+    "nextMatch": "Your next match",
+    "noMatchTitle": "No match planned",
+    "noMatchSubtitle": "Join an open match near you, or set up your own.",
+    "findMatch": "Join one",
+    "createMatch": "Host one",
+    "todaySession": "Today's session",
+    "startSession": "Start",
+    "streak": {
+      "none": "Start your first session",
+      "one": "1 day in a row",
+      "many": "{{count}} days in a row"
+    },
+    "activityTitle": "What your friends are up to",
+    "activityEmpty": "Add friends to follow their activity.",
+    "statsTitle": "Your month"
   },
   "training": {
     "title": "Training",
@@ -58,6 +78,147 @@
       "programs": "Programs",
       "drills": "Drills",
       "history": "History"
+    },
+    "programs": "Programs",
+    "history": "History",
+    "historyEmpty": "No completed session yet.",
+    "historyEmptyHint": "Your completed sessions will show up here.",
+    "notFound": "Programme not found",
+    "notFoundHint": "This programme no longer exists. Head back to the catalogue.",
+    "sessionsCount": {
+      "one": "1 session",
+      "many": "{{count}} sessions"
+    },
+    "exercisesCount": {
+      "one": "1 drill",
+      "many": "{{count}} drills"
+    },
+    "intensity": "Intensity",
+    "intensityLevels": {
+      "1": "Easy",
+      "2": "Moderate",
+      "3": "Hard"
+    },
+    "gear": {
+      "none": "No gear",
+      "ball": "A ball",
+      "cones": "Ball and cones",
+      "wall": "Ball and a wall"
+    },
+    "categories": {
+      "technique": "Technique",
+      "physical": "Fitness",
+      "shooting": "Shooting",
+      "defense": "Defending",
+      "goalkeeper": "Goalkeeping"
+    },
+    "start": "Start session",
+    "player": {
+      "getReady": "Get ready",
+      "work": "Go",
+      "rest": "Rest",
+      "next": "Next",
+      "skip": "Skip",
+      "pause": "Pause",
+      "resume": "Resume",
+      "quit": "Quit",
+      "quitTitle": "Quit the session?",
+      "quitSubtitle": "Your progress will be saved as is.",
+      "exerciseOf": "Drill {{current}} of {{total}}",
+      "doneTitle": "Session complete",
+      "doneSubtitle": "{{count}} drills, {{duration}} of work.",
+      "doneCta": "Finish",
+      "saved": "Session saved"
+    },
+    "catalogue": {
+      "exercises": {
+        "juggling": {
+          "name": "Juggling",
+          "description": "Keep the ball up without letting it drop. Alternate both feet."
+        },
+        "wall_passes": {
+          "name": "Wall passes",
+          "description": "Short passes against a wall, one touch each time."
+        },
+        "cone_dribble": {
+          "name": "Cone slalom",
+          "description": "Tight dribbling, cones one step apart."
+        },
+        "first_touch": {
+          "name": "First touch",
+          "description": "Play it off the wall, control and turn in one move."
+        },
+        "weak_foot": {
+          "name": "Weak foot",
+          "description": "Same drill, weak foot only. That's where the gains are."
+        },
+        "ladder_steps": {
+          "name": "Quick feet",
+          "description": "Short, fast steps on the spot, chest upright."
+        },
+        "sprint_intervals": {
+          "name": "Sprint intervals",
+          "description": "Short all-out sprint, then walk it back."
+        },
+        "core_plank": {
+          "name": "Plank",
+          "description": "Forearm plank, hips aligned, steady breathing."
+        },
+        "jump_squats": {
+          "name": "Jump squats",
+          "description": "Drop into a squat, explode up. Land soft."
+        },
+        "mobility": {
+          "name": "Mobility warm-up",
+          "description": "Ankles, hips, shoulders. Before every session."
+        },
+        "shooting_placement": {
+          "name": "Placed shots",
+          "description": "Aim at a precise target rather than hitting it hard."
+        },
+        "volley_control": {
+          "name": "Volleys",
+          "description": "Loop it off the wall and strike before it bounces."
+        },
+        "defensive_slides": {
+          "name": "Defensive slides",
+          "description": "Side steps between two cones, never crossing your legs."
+        },
+        "one_v_one_stance": {
+          "name": "One-on-one stance",
+          "description": "Work your stance: side on, knees bent."
+        },
+        "gk_reflexes": {
+          "name": "Reflexes",
+          "description": "Close-range throws off the wall, react to the bounce."
+        },
+        "gk_footwork": {
+          "name": "Footwork",
+          "description": "Short steps between cones, always facing play."
+        }
+      },
+      "programs": {
+        "quick_touch": {
+          "name": "Quick touch",
+          "description": "A short session to keep your touch, even on busy days."
+        },
+        "first_steps": {
+          "name": "First steps",
+          "description": "Dribbling and control basics, without going into the red."
+        },
+        "sharp_finish": {
+          "name": "Sharp finishing",
+          "description": "Dribbling, striking and power to be decisive in front of goal."
+        },
+        "engine": {
+          "name": "Engine",
+          "description": "Fitness work: footwork, sprints and core to last 90 minutes."
+        },
+        "keeper_drills": {
+          "name": "Keeper session",
+          "description": "Footwork, reflexes and movement for goalkeepers."
+        }
+      }
     }
   },
   "booking": {
@@ -68,7 +229,29 @@
       "futsal": "Futsal",
       "pitches": "Pitches",
       "bookings": "My bookings"
-    }
+    },
+    "venuesTitle": "Pitches near you",
+    "myBookings": "My bookings",
+    "noBookings": "No bookings yet.",
+    "cityMissing": "Set your city to see available pitches.",
+    "cityMissingHint": "The pitches on offer depend on your city.",
+    "setCity": "Set my city",
+    "slots": "Slots",
+    "noSlots": "No slot left that day.",
+    "book": "Book",
+    "booked": "Slot booked",
+    "cancelBooking": "Cancel",
+    "cancelled": "Booking cancelled",
+    "perSlot": "per slot",
+    "covered": "Indoor",
+    "outdoor": "Outdoor",
+    "venues": {
+      "five_indoor": "Indoor 5-a-side",
+      "futsal": "Futsal",
+      "club_pitch": "Club pitch",
+      "city_stadium": "Street pitch"
+    },
+    "demoNotice": "Demo pitches: there is no open directory of amateur pitches."
   },
   "social": {
     "title": "Social",
@@ -78,6 +261,26 @@
       "teams": "Teams",
       "messages": "Messages",
       "events": "Events"
+    },
+    "friends": "Friends",
+    "requests": "Requests",
+    "suggestions": "Players near you",
+    "activity": "Activity",
+    "noFriends": "No friends here yet.",
+    "noSuggestions": "No player to suggest right now.",
+    "noActivity": "Nothing to show yet.",
+    "pending": "Request sent",
+    "remove": "Remove",
+    "removed": "Connection removed",
+    "requestSent": "Request sent",
+    "accepted": "You're now friends",
+    "events": {
+      "match_created": "{{name}} is hosting a match",
+      "match_joined": "{{name}} joined a match",
+      "session_completed": "{{name}} completed a session",
+      "booking_created": "{{name}} booked a pitch",
+      "friend_added": "{{name}} has a new friend",
+      "badge_earned": "{{name}} earned a badge"
     }
   },
   "profile": {
@@ -93,6 +296,73 @@
       "badges": "Badges",
       "history": "History",
       "team": "My team"
+    },
+    "statsTitle": "Stats",
+    "badgesTitle": "Badges",
+    "badgesEarned": "{{earned}} of {{total}}",
+    "stats": {
+      "matchesPlayed": "Matches played",
+      "matchesUpcoming": "Upcoming matches",
+      "matchesOrganized": "Matches hosted",
+      "sessionsCompleted": "Sessions",
+      "trainingMinutes": "Training",
+      "bookings": "Bookings",
+      "friends": "Friends",
+      "currentStreakDays": "Current streak",
+      "bestStreakDays": "Best streak"
+    },
+    "badges": {
+      "locked": "Locked",
+      "items": {
+        "first_touch": {
+          "name": "First session",
+          "description": "Complete your first training session."
+        },
+        "regular": {
+          "name": "Consistency",
+          "description": "Complete 10 sessions."
+        },
+        "grinder": {
+          "name": "Perseverance",
+          "description": "Complete 30 sessions."
+        },
+        "hour_club": {
+          "name": "One hour in",
+          "description": "Reach 60 minutes of training."
+        },
+        "marathon": {
+          "name": "Marathon",
+          "description": "Reach 10 hours of training."
+        },
+        "streak_three": {
+          "name": "Three in a row",
+          "description": "Train three days running."
+        },
+        "streak_week": {
+          "name": "Full week",
+          "description": "Train seven days running."
+        },
+        "first_match": {
+          "name": "First match",
+          "description": "Play your first match."
+        },
+        "team_player": {
+          "name": "Team regular",
+          "description": "Play 10 matches."
+        },
+        "organizer": {
+          "name": "Organiser",
+          "description": "Host 3 matches."
+        },
+        "connected": {
+          "name": "Connected",
+          "description": "Add 3 friends."
+        },
+        "captain": {
+          "name": "Captain",
+          "description": "Add 10 friends."
+        }
+      }
     }
   },
   "auth": {
@@ -420,5 +690,68 @@
     "saved": "Saved",
     "themeApplied": "{{team}} theme applied",
     "loggedOut": "See you soon 👋"
+  },
+  "matches": {
+    "title": "Matches",
+    "tabs": {
+      "open": "Open",
+      "mine": "My matches"
+    },
+    "emptyOpen": "No open match near you",
+    "emptyOpenHint": "Be the first to host one.",
+    "emptyMine": "You haven't joined any match",
+    "notFound": "Match not found",
+    "notFoundHint": "It may have been cancelled, or the link is no longer valid.",
+    "create": "Host a match",
+    "spotsLeft": {
+      "one": "1 spot left",
+      "many": "{{count}} spots left"
+    },
+    "full": "Full",
+    "cancelled": "Cancelled",
+    "past": "Finished",
+    "organizer": "Hosted by {{name}}",
+    "organizerYou": "You're hosting this match",
+    "join": "Join",
+    "leave": "Leave match",
+    "cancelMatch": "Cancel match",
+    "cancelConfirmTitle": "Cancel this match?",
+    "cancelConfirmSubtitle": "Everyone who joined will be notified. This can't be undone.",
+    "joined": "You're in",
+    "participants": "Players",
+    "notes": "Details",
+    "venue": "Venue",
+    "when": "When",
+    "level": "Level",
+    "formats": {
+      "five": "5-a-side",
+      "futsal": "Futsal",
+      "seven": "7-a-side",
+      "eleven": "11-a-side"
+    },
+    "levels": {
+      "all": "All levels",
+      "leisure": "Casual",
+      "confirmed": "Experienced",
+      "competition": "Competitive"
+    },
+    "new": {
+      "title": "Host a match",
+      "format": "Format",
+      "level": "Expected level",
+      "day": "Day",
+      "time": "Time",
+      "duration": "Duration",
+      "venue": "Venue",
+      "venuePlaceholder": "Pitch name",
+      "city": "City",
+      "cityPlaceholder": "Your city",
+      "players": "Players",
+      "notes": "Details (optional)",
+      "notesPlaceholder": "Bibs, level, parking…",
+      "submit": "Create match",
+      "created": "Match created",
+      "cityMissing": "Set your city to host a match."
+    }
   }
 }

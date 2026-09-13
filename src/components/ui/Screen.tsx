@@ -1,7 +1,15 @@
 import { ChevronLeft } from 'lucide-react-native';
 import { router } from 'expo-router';
 import React, { type ReactNode } from 'react';
-import { KeyboardAvoidingView, Platform, ScrollView, View, type StyleProp, type ViewStyle } from 'react-native';
+import {
+  KeyboardAvoidingView,
+  Platform,
+  RefreshControl,
+  ScrollView,
+  View,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useTranslation } from '@/i18n';
@@ -19,6 +27,9 @@ interface ScreenProps {
   keyboard?: boolean;
   /** Bords protégés par la safe area (le bas est géré par la tab bar quand elle est présente). */
   edges?: ('top' | 'bottom' | 'left' | 'right')[];
+  /** Active le « tirer pour rafraîchir » (écrans alimentés par le backend). */
+  onRefresh?: () => void;
+  refreshing?: boolean;
   contentStyle?: StyleProp<ViewStyle>;
 }
 
@@ -29,6 +40,8 @@ export function Screen({
   padded = true,
   keyboard = false,
   edges = ['top', 'left', 'right'],
+  onRefresh,
+  refreshing = false,
   contentStyle,
 }: ScreenProps) {
   const theme = useTheme();
@@ -38,6 +51,16 @@ export function Screen({
     <ScrollView
       keyboardShouldPersistTaps="handled"
       showsVerticalScrollIndicator={false}
+      refreshControl={
+        onRefresh ? (
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={theme.colors.primary}
+            colors={[theme.colors.primary]}
+          />
+        ) : undefined
+      }
       contentContainerStyle={[padding, { paddingBottom: theme.spacing.xxl }, contentStyle]}
     >
       {children}
